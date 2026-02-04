@@ -1,0 +1,237 @@
+<head>
+    <style>
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        @keyframes pulse {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+        }
+        @keyframes shimmer {
+            0% { background-position: -1000px 0; }
+            100% { background-position: 1000px 0; }
+        }
+        @keyframes slideIn {
+            from { opacity: 0; transform: translateX(-30px); }
+            to { opacity: 1; transform: translateX(0); }
+        }
+        .animated-fade { animation: fadeIn 0.8s ease-out forwards; }
+        .animated-pulse { animation: pulse 2s ease-in-out infinite; }
+        .animated-slide { animation: slideIn 0.6s ease-out forwards; }
+    </style>
+</head>
+<body style="margin: 0; padding: 0; font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: linear-gradient(to right bottom, rgb(220, 239, 244), rgb(255, 255, 255));">
+    
+    <table width="100%" border="0" cellspacing="0" cellpadding="0" style="background: linear-gradient(to right bottom, rgb(220, 239, 244), rgb(255, 255, 255)); padding: 40px 0;">
+        <tr>
+            <td align="center">
+                
+                <!------------- Contenedor principal --------------->
+                <table width="600" border="0" cellspacing="0" cellpadding="0" style="background-color: #FFFFFF; border-radius: 16px; box-shadow: 0 8px 30px rgba(8, 24, 56, 0.12); max-width: 600px; overflow: hidden;">
+                    
+                    <!------------- Header corporativo --------------->
+                    <tr>
+                        <td style="background-color: #081838; padding: 6px 0;">
+                        </td>
+                    </tr>
+                    
+                    <!------------- Logo --------------->
+                    <tr>
+                        <td align="center" style="padding: 48px 40px 32px 40px; background-color: #FFFFFF;">
+                            <img src="logo.png" alt="CleverByte Logo" style="height: 64px; width: auto; display: block; animation: fadeIn 0.8s ease-out;">
+                        </td>
+                    </tr>
+                    
+                    <!------------- Contenido principal --------------->
+                    <tr>
+                        <td style="padding: 0 48px 48px 48px; background-color: #FFFFFF;">
+                            
+                            <!------------- Título --------------->
+                            <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                <tr>
+                                    <td align="center" style="padding-bottom: 16px;">
+                                        <h1 style="margin: 0; font-size: 28px; font-weight: 700; color: #081838; letter-spacing: -0.5px; line-height: 1.3; animation: fadeIn 1s ease-out;">
+                                            ✨ Invitación a CleverByte ✨
+                                        </h1>
+                                    </td>
+                                </tr>
+                            </table>
+                            
+                            <!------------- Saludo --------------->
+                            <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                <tr>
+                                    <td style="padding-bottom: 32px;">
+                                        <p style="margin: 0; font-size: 16px; color: #1A2744; line-height: 1.6;">
+                                            Hola <strong style="color: #081838;">Manuel García</strong>,
+                                        </p>
+                                        <p style="margin: 16px 0 0 0; font-size: 16px; color: #5A6C7D; line-height: 1.7;">
+                                            Te damos la bienvenida a nuestra plataforma de gestión empresarial. Hemos configurado tu cuenta y estás listo para comenzar.
+                                        </p>
+                                    </td>
+                                </tr>
+                            </table>
+                            
+                            <!------------- Card con efecto de esquinas --------------->
+                            <table width="100%" border="0" cellspacing="0" cellpadding="0" style="margin-bottom: 32px; position: relative; animation: fadeIn 1.2s ease-out;">
+                                <tr>
+                                    <td>
+                                        <!------------- Card container --------------->
+                                        <table width="100%" border="0" cellspacing="0" cellpadding="0" 
+                                        style="background: linear-gradient(135deg, rgb(255, 243, 205) 0%, rgb(255, 255, 255) 50%, rgb(220, 239, 244) 100%); 
+                                                border-radius: 16px; 
+                                                border: 0px solid rgba(180, 210, 220, 0.5); 
+                                                position: relative; 
+                                                box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);">
+                                            
+                                            <!------------- Esquina superior derecha --------------->
+                                            <tr>
+                                                <td>
+                                                    <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                                        <tr>
+                                                            <td width="80%"></td>
+                                                            <td width="20%" align="right">
+                                                                <div style="width: 50px; height: 50px; background: linear-gradient(135deg, rgba(28, 221, 230, 0.2), rgba(163, 245, 132, 0.2)); border-radius: 0 14px 0 100%; animation: pulse 3s ease-in-out infinite;"></div>
+                                                            </td>
+                                                        </tr>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                            
+                                            <!------------- Contenido del card --------------->
+                                            <tr>
+                                                <td style="padding: 0 32px 32px 32px;">
+                                                    <p style="margin: 0 0 20px 0; font-size: 14px; font-weight: 700; color: #081838; text-transform: uppercase; letter-spacing: 0.5px;">
+                                                        Accede a estas herramientas
+                                                    </p>
+                                                    
+                                                    <!------------- Feature 1 --------------->
+                                                    <table width="100%" border="0" cellspacing="0" cellpadding="0" style="margin-bottom: 14px; animation: slideIn 0.8s ease-out;">
+                                                        <tr>
+                                                            <td width="28" valign="top">
+                                                                <span style="color: rgb(28, 221, 230); font-size: 20px; font-weight: bold; display: inline-block; animation: pulse 2s ease-in-out infinite;">✓</span>
+                                                            </td>
+                                                            <td>
+                                                                <p style="margin: 0; font-size: 15px; color: #1A2744; line-height: 1.5;">
+                                                                    <strong>Gestión de facturas</strong> automatizada y eficiente
+                                                                </p>
+                                                            </td>
+                                                        </tr>
+                                                    </table>
+                                                    
+                                                    <!------------- Feature 2 --------------->
+                                                    <table width="100%" border="0" cellspacing="0" cellpadding="0" style="margin-bottom: 14px; animation: slideIn 1s ease-out;">
+                                                        <tr>
+                                                            <td width="28" valign="top">
+                                                                <span style="color: rgb(28, 221, 230); font-size: 20px; font-weight: bold; display: inline-block; animation: pulse 2s ease-in-out infinite 0.3s;">✓</span>
+                                                            </td>
+                                                            <td>
+                                                                <p style="margin: 0; font-size: 15px; color: #1A2744; line-height: 1.5;">
+                                                                    <strong>Reportes en tiempo real</strong> de tu actividad
+                                                                </p>
+                                                            </td>
+                                                        </tr>
+                                                    </table>
+                                                    
+                                                    <!------------- Feature 3 --------------->
+                                                    <table width="100%" border="0" cellspacing="0" cellpadding="0" style="animation: slideIn 1.2s ease-out;">
+                                                        <tr>
+                                                            <td width="28" valign="top">
+                                                                <span style="color: rgb(28, 221, 230); font-size: 20px; font-weight: bold; display: inline-block; animation: pulse 2s ease-in-out infinite 0.6s;">✓</span>
+                                                            </td>
+                                                            <td>
+                                                                <p style="margin: 0; font-size: 15px; color: #1A2744; line-height: 1.5;">
+                                                                    <strong>Soporte técnico</strong> dedicado 24/7
+                                                                </p>
+                                                            </td>
+                                                        </tr>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                            
+                                            <!------------- Esquina inferior izquierda --------------->
+                                            <tr>
+                                                <td>
+                                                    <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                                        <tr>
+                                                            <td width="20%">
+                                                                <div style="width: 50px; height: 50px; background: linear-gradient(135deg, rgba(163, 245, 132, 0.2), rgba(28, 221, 230, 0.2)); border-radius: 0 100% 0 14px; animation: pulse 3s ease-in-out infinite 0.5s;"></div>
+                                                            </td>
+                                                            <td width="80%"></td>
+                                                        </tr>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                            
+                                        </table>
+                                    </td>
+                                </tr>
+                            </table>
+                            
+                            <!------------- Botón CTA --------------->
+                            <table width="100%" border="0" cellspacing="0" cellpadding="0" style="animation: fadeIn 1.4s ease-out;">
+                                <tr>
+                                    <td align="center" style="padding: 24px 0;">
+                                        <table border="0" cellspacing="0" cellpadding="0">
+                                            <tr>
+                                                <td align="center" style="border-radius: 10px; background: linear-gradient(90deg, rgb(28, 221, 230) 0%, rgb(163, 245, 132) 100%); box-shadow: 0 6px 20px rgba(28, 221, 230, 0.4); transition: all 0.3s ease; animation: pulse 2.5s ease-in-out infinite;">
+                                                    <a href="#" style="display: inline-block; padding: 16px 44px; font-size: 16px; color: #081838; text-decoration: none; font-weight: 700; letter-spacing: 0.3px;">
+                                                        🚀 Acceder a mi cuenta
+                                                    </a>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                            </table>
+                            
+                            <!------------- Nota informativa --------------->
+                        <table width="100%" border="0" cellspacing="0" cellpadding="0" style="padding-top: 24px; animation: fadeIn 1.6s ease-out;">
+                                <tr>
+                                    <td style="padding: 20px; background: linear-gradient(to right, rgba(28, 221, 230, 0.08), rgba(163, 245, 132, 0.08)); border-radius: 10px; border-left: 4px solid rgb(28, 221, 230); box-shadow: 0 2px 8px rgba(28, 221, 230, 0.1);">
+                                        <p style="margin: 0; font-size: 13px; color: #1A2744; line-height: 1.6;">
+                                            <span style="display: inline-block; animation: pulse 2s ease-in-out infinite;">💡</span> <strong>Tip:</strong> Completa tu perfil para obtener una experiencia personalizada
+                                        </p>
+                                    </td>
+                                </tr>
+                            </table>
+                            
+                            <!------------- Enlace alternativo --------------->
+                            <table width="100%" border="0" cellspacing="0" cellpadding="0" style="padding-top: 32px; border-top: 1px solid #E5E9ED; margin-top: 32px;">
+                                <tr>
+                                    <td align="center">
+                                        <p style="margin: 0 0 8px 0; font-size: 12px; color: #8B95A1; line-height: 1.5;">
+                                            Si el botón no funciona, copia este enlace:
+                                        </p>
+                                        <p style="margin: 0; font-size: 12px; line-height: 1.6;">
+                                            <a href="https://plataforma.example.com/invitacion/ref=723912" style="color: rgb(28, 221, 230); text-decoration: none; word-break: break-all; font-weight: 500;">https://plataforma.example.com/invitacion/ref=723912</a>
+                                        </p>
+                                    </td>
+                                </tr>
+                            </table>
+                            
+                        </td>
+                    </tr>
+                    
+                    <!------------- Footer --------------->
+                    <tr>
+                        <td align="center" style="background-color: #081838; padding: 32px 40px;">
+                            <p style="margin: 0 0 4px 0; font-size: 13px; color: #FFFFFF; font-weight: 600; font-family: 'Inter', sans-serif;">
+                                CleverByte Solutions
+                            </p>
+                            <p style="margin: 0; font-size: 12px; color: #0096c6; line-height: 1.5; font-family: 'Inter', sans-serif;">
+                                Soluciones tecnológicas para tu negocio
+                            </p>
+                            <p style="margin: 12px 0 0 0; font-size: 11px; color: #8B95A1; font-family: 'Inter', sans-serif;">
+                                © 2026 CleverByte. Todos los derechos reservados.
+                            </p>
+                        </td>
+                    </tr>
+                    
+                </table>
+                
+            </td>
+        </tr>
+    </table>
+    
+</body>
