@@ -270,7 +270,7 @@
                     <div class="wizard-content">
                         <section class="wizard-panel active" data-panel="0">
                             <div class="wizard-grid">
-                                <div class="wizard-field">
+                                <div class="wizard-field plan-field">
                                     <label for="planSeleccionado">Plan seleccionado</label>
                                     <select
                                         id="planSeleccionado"
@@ -281,32 +281,47 @@
                                         <option value="Pymes">Pymes</option>
                                         <option value="Empresas">Empresas</option>
                                     </select>
+                                    <div class="wizard-billing-toggle" role="group" aria-label="Tipo de facturación">
+                                        <button type="button" class="wizard-billing-btn active" data-billing="annual">
+                                            Anual
+                                        </button>
+                                        <button type="button" class="wizard-billing-btn" data-billing="monthly">
+                                            Mensual
+                                        </button>
+                                    </div>
                                     <div class="wizard-plan-card" id="planInfo"></div>
+                                    <div class="wizard-trial-note" id="trialNote">
+                                        * Tu prueba gratuita finaliza el --/--/----
+                                    </div>
                                 </div>
-                                <div class="wizard-field">
+                                <div class="wizard-field name-field">
                                     <label for="empresaNombre">Nombre de la Empresa *</label>
                                     <input
                                         type="text"
                                         id="empresaNombre"
                                         name="empresaNombre"
+                                        placeholder="Ej: CleverFactu SL"
                                         required
                                     />
                                 </div>
-                                <div class="wizard-field">
+                                <div class="wizard-field cif-field">
                                     <label for="empresaCif">CIF/NIF *</label>
                                     <input
                                         type="text"
                                         id="empresaCif"
                                         name="empresaCif"
+                                        placeholder="Ej: B12345678 o 12345678Z"
                                         required
                                     />
+                                    <span class="wizard-note">Formato válido: letra + 8 números (CIF) o 8 números + letra (NIF).</span>
                                 </div>
-                                <div class="wizard-field">
+                                <div class="wizard-field address-field">
                                     <label for="empresaDireccion">Dirección Completa *</label>
                                     <input
                                         type="text"
                                         id="empresaDireccion"
                                         name="empresaDireccion"
+                                        placeholder="Calle, número, piso, código postal"
                                         required
                                     />
                                 </div>
@@ -316,16 +331,52 @@
                         <section class="wizard-panel" data-panel="1">
                             <div class="wizard-grid">
                                 <div class="wizard-field">
+                                    <label for="contactoNombre">Nombre y apellidos *</label>
+                                    <input
+                                        type="text"
+                                        id="contactoNombre"
+                                        name="contactoNombre"
+                                        placeholder="Ej: Joe Pérez"
+                                        required
+                                    />
+                                </div>
+                                <div class="wizard-field">
                                     <label for="contactoEmail">Email *</label>
                                     <input
                                         type="email"
                                         id="contactoEmail"
                                         name="contactoEmail"
+                                        placeholder="tu@empresa.com"
                                         required
                                     />
                                     <span class="wizard-note">
-                                        Este email servirá de actividad y para recuperar la contraseña.
+                                        Este email servirá para crear la cuenta y recuperar la contraseña.
                                     </span>
+                                </div>
+                                <div class="wizard-field">
+                                    <label for="empresaNacionalidad">Nacionalidad</label>
+                                    <select id="empresaNacionalidad" name="empresaNacionalidad" class="wizard-plan-select">
+                                        <option value="ES">🇪🇸 España</option>
+                                        <option value="PT">🇵🇹 Portugal</option>
+                                        <option value="FR">🇫🇷 Francia</option>
+                                        <option value="IT">🇮🇹 Italia</option>
+                                        <option value="DE">🇩🇪 Alemania</option>
+                                        <option value="GB">🇬🇧 Reino Unido</option>
+                                        <option value="US">🇺🇸 Estados Unidos</option>
+                                    </select>
+                                    <span class="wizard-note">Busca y selecciona tu país.</span>
+                                </div>
+                                <div class="wizard-field">
+                                    <label for="empresaCiudad">Ciudad</label>
+                                    <select id="empresaCiudad" name="empresaCiudad" class="wizard-plan-select">
+                                        <option value="">Selecciona una ciudad</option>
+                                        <option value="Madrid">Madrid</option>
+                                        <option value="Barcelona">Barcelona</option>
+                                        <option value="Valencia">Valencia</option>
+                                        <option value="Sevilla">Sevilla</option>
+                                        <option value="Bilbao">Bilbao</option>
+                                        <option value="Málaga">Málaga</option>
+                                    </select>
                                 </div>
                                 <div class="wizard-field">
                                     <label for="contactoTelefono">Teléfono</label>
@@ -333,6 +384,7 @@
                                         type="tel"
                                         id="contactoTelefono"
                                         name="contactoTelefono"
+                                        placeholder="Ej: +34 600 123 456"
                                     />
                                 </div>
                             </div>
@@ -342,21 +394,37 @@
                             <div class="wizard-grid">
                                 <div class="wizard-field">
                                     <label for="password">Contraseña *</label>
-                                    <input
-                                        type="password"
-                                        id="password"
-                                        name="password"
-                                        required
-                                    />
+                                    <div class="wizard-password-field">
+                                        <input
+                                            type="password"
+                                            id="password"
+                                            name="password"
+                                            placeholder="Mínimo 8 caracteres"
+                                            required
+                                        />
+                                        <button type="button" class="wizard-eye-toggle" id="togglePasswords" aria-label="Mostrar contraseñas">
+                                            <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                                                <path d="M1.5 12s4.5-7 10.5-7 10.5 7 10.5 7-4.5 7-10.5 7S1.5 12 1.5 12z" fill="none" stroke="currentColor" stroke-width="1.8"/>
+                                                <circle cx="12" cy="12" r="3.5" fill="none" stroke="currentColor" stroke-width="1.8"/>
+                                            </svg>
+                                        </button>
+                                    </div>
+                                    <div class="wizard-strength">
+                                        <div class="wizard-strength-bar" id="strengthBar"></div>
+                                    </div>
+                                    <span class="wizard-note" id="strengthText">Seguridad: baja</span>
                                 </div>
                                 <div class="wizard-field">
                                     <label for="confirmPassword">Confirmar Contraseña *</label>
-                                    <input
-                                        type="password"
-                                        id="confirmPassword"
-                                        name="confirmPassword"
-                                        required
-                                    />
+                                    <div class="wizard-password-field">
+                                        <input
+                                            type="password"
+                                            id="confirmPassword"
+                                            name="confirmPassword"
+                                            placeholder="Repite tu contraseña"
+                                            required
+                                        />
+                                    </div>
                                 </div>
                             </div>
                         </section>
@@ -379,8 +447,7 @@
             <div class="max-w-7xl mx-auto">
                 <div class="text-center space-y-4">
                     <p class="text-base opacity-90">
-                        &copy; <span id="currentYear"></span> CleverFactu - Desarrollado con
-                        ❤️ por
+                        &copy; <span id="currentYear"></span> CleverFactu - Desarrollado por
                         <a
                             href="https://cleverbyte.es/"
                             target="_blank"
@@ -397,8 +464,6 @@
                 </div>
             </div>
         </footer>
-
-        <div class="watermark">© 2026 Federico Lora</div>
 
         <script src="scripts.js"></script>
         <script>
@@ -424,21 +489,32 @@
 
             const planDetails = {
                 Autónomos: {
-                    price: "9,99€/mes",
-                    note: "Facturado anualmente (119,88€/año)",
+                    monthly: "11,99€/mes",
+                    annual: "9,99€/mes",
+                    noteAnnual: "Facturado anualmente (119,88€/año)",
+                    noteMonthly: "Facturado mensualmente",
                     details: "Hasta 50 facturas/mes · 1 usuario · 5GB",
                 },
                 Pymes: {
-                    price: "19,99€/mes",
-                    note: "Facturado anualmente (239,88€/año)",
+                    monthly: "23,99€/mes",
+                    annual: "19,99€/mes",
+                    noteAnnual: "Facturado anualmente (239,88€/año)",
+                    noteMonthly: "Facturado mensualmente",
                     details: "Facturas ilimitadas · Hasta 5 usuarios · 50GB",
                 },
                 Empresas: {
-                    price: "39,99€/mes",
-                    note: "Facturado anualmente (479,88€/año)",
+                    monthly: "47,99€/mes",
+                    annual: "39,99€/mes",
+                    noteAnnual: "Facturado anualmente (479,88€/año)",
+                    noteMonthly: "Facturado mensualmente",
                     details: "Usuarios ilimitados · Soporte 24/7 · 500GB",
                 },
             };
+
+            const billingButtons = Array.from(
+                document.querySelectorAll(".wizard-billing-btn")
+            );
+            let billingMode = "annual";
 
             const renderPlanInfo = (value) => {
                 if (!planInfo) return;
@@ -453,12 +529,14 @@
                     return;
                 }
                 const details = planData.details.split(" · ");
+                const price = billingMode === "annual" ? planData.annual : planData.monthly;
+                const note = billingMode === "annual" ? planData.noteAnnual : planData.noteMonthly;
                 planInfo.innerHTML = `
                     <div class="wizard-plan-header">
                         <div class="wizard-plan-title">Plan ${value}</div>
-                        <div class="wizard-plan-price">${planData.price}</div>
+                        <div class="wizard-plan-price">${price}</div>
                     </div>
-                    <div class="wizard-plan-note">${planData.note}</div>
+                    <div class="wizard-plan-note">${note}</div>
                     <ul class="wizard-plan-list">
                         ${details.map((item) => `<li>${item}</li>`).join("")}
                     </ul>
@@ -472,6 +550,72 @@
                 });
             } else {
                 renderPlanInfo(planValue);
+            }
+
+            billingButtons.forEach((button) => {
+                button.addEventListener("click", () => {
+                    billingMode = button.dataset.billing;
+                    billingButtons.forEach((btn) =>
+                        btn.classList.toggle("active", btn === button)
+                    );
+                    if (planField) renderPlanInfo(planField.value);
+                });
+            });
+
+            const trialNote = document.getElementById("trialNote");
+            if (trialNote) {
+                const today = new Date();
+                const endDate = new Date(today.getTime() + 15 * 24 * 60 * 60 * 1000);
+                const formatted = endDate.toLocaleDateString("es-ES");
+                trialNote.textContent = `* Tu prueba gratuita finaliza el ${formatted}`;
+            }
+
+            const passwordInput = document.getElementById("password");
+            const strengthBar = document.getElementById("strengthBar");
+            const strengthText = document.getElementById("strengthText");
+
+            const updateStrength = (value) => {
+                if (!strengthBar || !strengthText) return;
+                let score = 0;
+                if (value.length >= 8) score += 1;
+                if (/[A-Z]/.test(value)) score += 1;
+                if (/[0-9]/.test(value)) score += 1;
+                if (/[^A-Za-z0-9]/.test(value)) score += 1;
+
+                const levels = [
+                    { width: "25%", color: "#ef4444", text: "Seguridad: baja" },
+                    { width: "50%", color: "#f59e0b", text: "Seguridad: media" },
+                    { width: "75%", color: "#facc15", text: "Seguridad: buena" },
+                    { width: "100%", color: "#22c55e", text: "Seguridad: alta" },
+                ];
+                const level = levels[Math.max(score - 1, 0)];
+                strengthBar.style.width = level.width;
+                strengthBar.style.background = level.color;
+                strengthText.textContent = level.text;
+            };
+
+            if (passwordInput) {
+                passwordInput.addEventListener("input", (event) => {
+                    updateStrength(event.target.value);
+                });
+                updateStrength("");
+            }
+
+            const togglePasswordsBtn = document.getElementById("togglePasswords");
+            if (togglePasswordsBtn) {
+                togglePasswordsBtn.addEventListener("click", () => {
+                    const password = document.getElementById("password");
+                    const confirmPassword = document.getElementById("confirmPassword");
+                    if (!password || !confirmPassword) return;
+                    const show = password.type === "password";
+                    password.type = show ? "text" : "password";
+                    confirmPassword.type = show ? "text" : "password";
+                    togglePasswordsBtn.classList.toggle("active", show);
+                    togglePasswordsBtn.setAttribute(
+                        "aria-label",
+                        show ? "Ocultar contraseñas" : "Mostrar contraseñas"
+                    );
+                });
             }
 
             let currentStep = 0;
