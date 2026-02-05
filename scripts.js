@@ -999,7 +999,6 @@ trialForms.forEach((form) => {
             .replace(/\{\{PLAN_URL\}\}/g, encodeURIComponent(planValue));
         const normalizedTemplate = normalizeEmailTemplate(personalizedTemplate);
 
-        openEmailPreview(normalizedTemplate);
         openDraftWindow(normalizedTemplate, `Solicitud prueba ${plan}`);
 
         message.textContent = `Solicitud enviada para el plan ${plan}. Te contactaremos pronto.`;
