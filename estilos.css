@@ -1385,6 +1385,7 @@ body {
     align-self: start;
 }
 
+
 .pricing-card:hover {
     transform: translateY(-8px) scale(1.01);
     box-shadow: 0 24px 50px rgba(8, 24, 56, 0.18);
@@ -1515,6 +1516,26 @@ body {
 
 .plan-trial-message.is-error {
     color: #d14343;
+}
+
+/* ============= CINTA PLAN RECOMENDADO ============= */
+.plan-ribbon {
+    position: absolute;
+    top: 6px;
+    right: -70px;
+    left: auto;
+    width: 260px;
+    text-align: center;
+    background: linear-gradient(90deg, #1fb8bf 0%, #7fd872 100%);
+    color: #ffffff;
+    font-size: 0.7rem;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    padding: 8px 0;
+    text-indent: 56px;
+    transform: rotate(45deg);
+    transform-origin: center;
+    box-shadow: 0 10px 20px rgba(8, 24, 56, 0.2);
 }
 
 /* ============= REGISTRO ASISTENTE ============= */
