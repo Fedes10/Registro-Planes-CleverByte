@@ -1540,7 +1540,7 @@ body {
 
 /* ============= REGISTRO ASISTENTE ============= */
 .wizard-wrapper {
-    max-width: 980px;
+    max-width: 1040px;
     margin: 0 auto;
     padding: 140px 24px 80px;
 }
@@ -1606,8 +1606,8 @@ body {
 .wizard-panel {
     display: none;
     opacity: 0;
-    transform: translateX(20px);
-    transition: all 0.35s ease;
+    transform: translateX(30px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
 }
 
 .wizard-panel.active {
@@ -1620,6 +1620,41 @@ body {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
     gap: 18px 20px;
+}
+
+.wizard-panel[data-panel="0"] .wizard-grid {
+    grid-template-columns: minmax(280px, 1.1fr) minmax(260px, 1fr) minmax(260px, 1fr);
+    grid-template-areas:
+        "plan name cif"
+        "plan address cif";
+    align-items: start;
+}
+
+.wizard-panel[data-panel="0"] .plan-field {
+    grid-area: plan;
+}
+
+.wizard-panel[data-panel="0"] .name-field {
+    grid-area: name;
+}
+
+.wizard-panel[data-panel="0"] .cif-field {
+    grid-area: cif;
+}
+
+.wizard-panel[data-panel="0"] .address-field {
+    grid-area: address;
+}
+
+@media (max-width: 980px) {
+    .wizard-panel[data-panel="0"] .wizard-grid {
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "plan"
+            "name"
+            "cif"
+            "address";
+    }
 }
 
 .wizard-field {
@@ -1646,15 +1681,133 @@ body {
     transition: border-color 0.2s ease, box-shadow 0.2s ease;
 }
 
-.wizard-plan-select {
+.wizard-password-field input {
+    width: 100%;
+    flex: 1;
+    padding-right: 36px;
+}
+
+.wizard-billing-toggle {
+    display: flex;
+    gap: 8px;
+    margin: 6px 0 4px;
+    background: #f1f5f9;
+    padding: 6px;
+    border-radius: 999px;
+    width: 100%;
+    justify-content: center;
+}
+
+.wizard-billing-btn {
+    border: none;
+    background: #e9eff5;
+    padding: 7px 12px;
+    border-radius: 999px;
+    font-weight: 600;
+    color: #6b7280;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    flex: 1;
+    text-align: center;
+    font-size: 0.85rem;
+    min-width: 0;
+}
+
+.wizard-billing-btn.active {
+    background: #ffffff;
+    color: #0b7fa6;
+    box-shadow: 0 6px 14px rgba(8, 24, 56, 0.08);
+}
+
+.wizard-trial-note {
+    margin-top: 6px;
+    font-size: 0.85rem;
+    color: #9a5b00;
+    background: #fff7e6;
+    border: 1px solid #ffd28a;
+    padding: 8px 10px;
+    border-radius: 10px;
+}
+
+.wizard-password-field {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    position: relative;
+}
+
+.wizard-eye-toggle {
+    display: inline-flex;
+    align-items: center;
     border: 1px solid #dbe3ea;
+    background: #f8fafc;
+    color: #0b7fa6;
+    border-radius: 999px;
+    padding: 0;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    font-size: 0.72rem;
+    font-weight: 600;
+    width: 30px;
+    height: 30px;
+    justify-content: center;
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.wizard-eye-toggle svg {
+    width: 16px;
+    height: 16px;
+}
+
+.wizard-eye-toggle.active {
+    background: #0b7fa6;
+    color: #ffffff;
+    border-color: #0b7fa6;
+}
+.wizard-eye.active {
+    background: #e0f2fe;
+    transform: translateY(-1px);
+}
+
+.wizard-strength {
+    height: 8px;
+    background: #e5e7eb;
+    border-radius: 999px;
+    overflow: hidden;
+    margin-top: 8px;
+}
+
+.wizard-strength-bar {
+    height: 100%;
+    width: 0%;
+    background: #ef4444;
+    border-radius: 999px;
+    transition: width 0.3s ease, background 0.3s ease;
+}
+
+.wizard-plan-select {
+    border: 1px solid rgba(0, 150, 198, 0.25);
     border-radius: 12px;
-    padding: 12px 14px;
+    padding: 12px 40px 12px 14px;
     font-size: 0.95rem;
     font-family: inherit;
     color: #1a2744;
-    background: #ffffff;
-    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+    background: linear-gradient(135deg, rgba(0, 150, 198, 0.08), rgba(46, 210, 133, 0.08)) #ffffff;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease, transform 0.2s ease;
+    box-shadow: 0 10px 20px rgba(8, 24, 56, 0.08);
+    appearance: none;
+    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='20' height='20' viewBox='0 0 24 24' fill='none' stroke='%230b7fa6' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'><polyline points='6 9 12 15 18 9'/></svg>");
+    background-repeat: no-repeat;
+    background-position: right 14px center;
+    background-size: 18px;
+}
+
+.wizard-plan-select:hover {
+    border-color: rgba(0, 150, 198, 0.45);
+    transform: translateY(-1px);
 }
 
 .wizard-plan-select:focus {
@@ -1679,14 +1832,29 @@ body {
     margin-top: 10px;
     padding: 14px 16px;
     border-radius: 16px;
-    background: linear-gradient(120deg, rgba(31, 184, 191, 0.18), rgba(127, 216, 114, 0.18));
-    border: 1px solid rgba(31, 184, 191, 0.35);
+    background: linear-gradient(120deg, rgba(0, 150, 198, 0.18), rgba(46, 210, 133, 0.2));
+    border: 1px solid rgba(0, 150, 198, 0.35);
     color: #1a2744;
     font-weight: 600;
     display: flex;
     flex-direction: column;
     gap: 10px;
-    box-shadow: 0 10px 22px rgba(8, 24, 56, 0.06);
+    box-shadow: 0 14px 28px rgba(8, 24, 56, 0.12);
+    position: relative;
+    overflow: hidden;
+}
+
+.wizard-plan-card::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(circle at top left, rgba(255, 255, 255, 0.6), transparent 55%);
+    opacity: 0.6;
+    pointer-events: none;
+}
+
+.wizard-panel[data-panel="0"] .address-field {
+    margin-top: -18px;
 }
 
 .wizard-plan-header {
@@ -1694,6 +1862,8 @@ body {
     justify-content: space-between;
     align-items: center;
     gap: 12px;
+    position: relative;
+    z-index: 1;
 }
 
 .wizard-plan-title {
@@ -1710,7 +1880,13 @@ body {
 
 .wizard-plan-note {
     font-size: 0.85rem;
-    color: #5a6c7d;
+    color: #0b7fa6;
+    background: rgba(255, 255, 255, 0.7);
+    border-radius: 999px;
+    padding: 4px 10px;
+    width: fit-content;
+    position: relative;
+    z-index: 1;
 }
 
 .wizard-plan-list {
@@ -1722,13 +1898,23 @@ body {
     font-size: 0.9rem;
     color: #4b5563;
     font-weight: 500;
+    position: relative;
+    z-index: 1;
 }
 
 .wizard-plan-list li::before {
     content: "✓";
-    color: #22b06f;
+    color: #ffffff;
+    background: #22b06f;
     font-weight: 700;
     margin-right: 8px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    font-size: 0.7rem;
 }
 
 .wizard-actions {
