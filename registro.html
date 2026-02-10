@@ -275,7 +275,6 @@ Versión: 2.0
                             <p style="font-size: 1rem; color: #222; max-width: 400px; margin: 0 auto 16px auto; line-height: 1.6;">
                                 Te hemos enviado un email a <span id="verificacionCorreo" style="font-weight: 700; color: #0096C6;"></span>.
                             </p>
-                            <div class="wizard-spinner" style="margin: 20px auto;"></div>
                             <p style="font-size: 0.92rem; color: #6B7280; font-style: italic; margin-top: 12px;">¿No lo ves? Revisa la carpeta de spam.</p>
                             <div style="margin-top: 24px; margin-bottom: 0px;">
                             </div>
@@ -306,26 +305,9 @@ Versión: 2.0
                                 <label for="pais" class="required">País</label>
                                 <select id="pais" name="pais" class="wizard-input" required>
                                     <option value="ES" selected>🇪🇸 España</option>
-                                    <option value="PT">🇵🇹 Portugal</option>
-                                    <option value="FR">🇫🇷 Francia</option>
-                                    <option value="IT">🇮🇹 Italia</option>
-                                    <option value="DE">🇩🇪 Alemania</option>
-                                    <option value="GB">🇬🇧 Reino Unido</option>
-                                    <option value="US">🇺🇸 Estados Unidos</option>
                                 </select>
                             </div>
-                            <div class="wizard-field">
-                                <label for="numClientes" class="required">Número de clientes</label>
-                                <select id="numClientes" name="numClientes" class="wizard-input" required>
-                                    <option value="">Escoge una opción</option>
-                                    <option value="1-10">1-10 clientes</option>
-                                    <option value="11-25">11-25 clientes</option>
-                                    <option value="26-50">26-50 clientes</option>
-                                    <option value="51-100">51-100 clientes</option>
-                                    <option value=">100">Más de 100 clientes</option>
-                                </select>
-                            </div>
-                            <div class="wizard-field">
+                           <div class="wizard-field">
                                 <label for="logoEmpresa">Logo de la empresa</label>
                                 <div class="wizard-file-upload">
                                     <input type="file" id="logoEmpresa" name="logoEmpresa" accept="image/*" class="wizard-file-input" />
@@ -350,7 +332,7 @@ Versión: 2.0
                                     </button>
                                 </div>
                                 <div class="wizard-password-strength" id="passwordStrengthBar"></div>
-                                <span class="wizard-note">Mínimo 8 caracteres, 1 número y 1 carácter especial.</span>
+                                <span class="wizard-note">Mínimo 8 caracteres, 1 mayúsucula, 1 número y 1 carácter especial.</span>
                             </div>
 
                             <!-- Fila 4: Términos -->

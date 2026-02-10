@@ -477,7 +477,7 @@ document.addEventListener('DOMContentLoaded', function() {
     // ========== FUNCIÓN: VALIDAR SECCIÓN FINAL ==========
     function validateFinalSection() {
         let valid = true;
-        
+        // Validar campos requeridos
         document.querySelectorAll('[data-panel="3"] select[required], [data-panel="3"] input[required]').forEach(input => {
             if (input.type === 'checkbox') {
                 if (!input.checked) {
@@ -495,7 +495,34 @@ document.addEventListener('DOMContentLoaded', function() {
                 }
             }
         });
-        
+
+        // Validar complejidad de contraseña
+        const passwordInput = document.getElementById('password');
+        if (passwordInput) {
+            const val = passwordInput.value;
+            // Mínimo 8 caracteres, 1 mayúscula, 1 número y 1 carácter especial
+            const regex = /^(?=.*[A-Z])(?=.*\d)(?=.*[^A-Za-z0-9]).{8,}$/;
+            if (!regex.test(val)) {
+                passwordInput.classList.add('error');
+                // Mostrar advertencia si no existe
+                let aviso = passwordInput.closest('.wizard-field')?.querySelector('.wizard-warning-password');
+                if (!aviso) {
+                    aviso = document.createElement('div');
+                    aviso.className = 'wizard-warning wizard-warning-password';
+                    aviso.style.color = '#e53e3e';
+                    aviso.style.fontSize = '0.97em';
+                    aviso.style.marginTop = '4px';
+                    aviso.textContent = 'La contraseña debe tener mínimo 8 caracteres, 1 mayúscula, 1 número y 1 carácter especial.';
+                    passwordInput.closest('.wizard-field').appendChild(aviso);
+                }
+                valid = false;
+            } else {
+                passwordInput.classList.remove('error');
+                // Quitar advertencia si existe
+                const aviso = passwordInput.closest('.wizard-field')?.querySelector('.wizard-warning-password');
+                if (aviso) aviso.remove();
+            }
+        }
         return valid;
     }
     
