@@ -134,7 +134,7 @@ document.addEventListener('DOMContentLoaded', function() {
         // Paso 1: Validar datos antes de avanzar
         if (currentStep === 1) {
             datosStep2Intentado = true;
-            
+
             // Validar email específicamente
             const emailInput = document.getElementById('email');
             if (emailInput && !emailInput.checkValidity()) {
@@ -142,7 +142,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 const field = emailInput.closest('.wizard-field');
                 const avisoPrevio = field && field.querySelector('.wizard-warning-email');
                 if (avisoPrevio) avisoPrevio.remove();
-                
+
                 if (field && !field.querySelector('.wizard-warning-email')) {
                     const aviso = document.createElement('div');
                     aviso.className = 'wizard-warning wizard-warning-email';
@@ -158,33 +158,15 @@ document.addEventListener('DOMContentLoaded', function() {
                 const avisoPrevio = field && field.querySelector('.wizard-warning-email');
                 if (avisoPrevio) avisoPrevio.remove();
             }
-            
+
             // Validar todos los campos
             if (!validateDatosSection(true)) {
                 updateProgressBar();
                 return;
             }
-            
+
             // Pasar al paso de verificación
             goToStep(2);
-            
-            // Actualizar email de verificación
-            const email = emailInput?.value || '';
-            const correoSpan = document.getElementById('verificacionCorreo');
-            if (correoSpan && email) correoSpan.textContent = email;
-            
-            // Habilitar botón de verificación
-            const btnNextVerificacion = document.getElementById('btnNextVerificacion');
-            if (btnNextVerificacion) {
-                btnNextVerificacion.disabled = false;
-                btnNextVerificacion.style.opacity = '1';
-                btnNextVerificacion.style.pointerEvents = 'auto';
-                btnNextVerificacion.style.display = 'block';
-                btnNextVerificacion.removeAttribute('disabled');
-            }
-            
-            // Abrir ventana de correo
-            openEmailDraft();
             return;
         }
         
@@ -284,29 +266,73 @@ document.addEventListener('DOMContentLoaded', function() {
     // ========== FUNCIÓN: ACTUALIZAR BARRA DE PROGRESO ==========
     function updateProgressBar() {
         let percent = 0;
-        
+
         // Paso 1: Tipo de usuario seleccionado
         const paso1 = document.querySelector('.user-type-card.selected') ? 1 : 0;
-        
+
         // Paso 2: Campos de datos completados
         const requiredStep2 = Array.from(document.querySelectorAll('.wizard-panel[data-panel="1"] input[required], .wizard-panel[data-panel="1"] select[required]'));
         const filledStep2 = requiredStep2.filter(input => input.value && input.value.trim() !== '').length;
-        
-        // Paso 4: Campos finales completados (Paso de suscripción/envío)
+
+        // Paso 4: Campos finales completados (Paso de activación)
         const requiredStep4 = Array.from(document.querySelectorAll('.wizard-panel[data-panel="3"] input[required], .wizard-panel[data-panel="3"] select[required]'));
         const filledStep4 = requiredStep4.filter(input => {
             if (input.type === 'checkbox') return input.checked;
             return input.value && input.value.trim() !== '';
         }).length;
-        
-        // Calcular porcentaje basado en campos obligatorios
-        const totalFields = 1 + requiredStep2.length + requiredStep4.length;
-        const filledFields = paso1 + filledStep2 + filledStep4;
-        
-        percent = totalFields > 0 ? Math.round((filledFields / totalFields) * 100) : 0;
-        
+
+        // Detectar si estamos en el paso de activación (panel 3)
+        const panelActivacion = document.querySelector('.wizard-panel[data-panel="3"]');
+        const isActivacionVisible = panelActivacion && panelActivacion.classList.contains('active');
+
+        // Cálculo especial para el paso de activación
+        if (isActivacionVisible) {
+            // Progresivo: base 90%, cada campo suma el resto hasta 100%,
+            // el último campo (checkbox de términos) suma el sobrante para llegar a 100% exacto
+            let base = 90;
+            let extra = 0;
+            if (requiredStep4.length > 0) {
+                const n = requiredStep4.length;
+                const normalStep = Math.floor((10 * 100) / n) / 100; // Porcentaje por campo excepto el último
+                const lastStep = 10 - normalStep * (n - 1); // El último campo suma el resto
+                // Sumar los campos rellenados
+                for (let i = 0; i < n - 1; i++) {
+                    const input = requiredStep4[i];
+                    if (input.type === 'checkbox') {
+                        if (input.checked) extra += normalStep;
+                    } else {
+                        if (input.value && input.value.trim() !== '') extra += normalStep;
+                    }
+                }
+                // Último campo
+                const lastInput = requiredStep4[n - 1];
+                let lastChecked = false;
+                if (lastInput.type === 'checkbox') {
+                    if (lastInput.checked) lastChecked = true;
+                } else {
+                    if (lastInput.value && lastInput.value.trim() !== '') lastChecked = true;
+                }
+                if (lastChecked) extra += lastStep;
+            }
+            let percent = base + extra;
+            if (percent > 100) percent = 100;
+            percent = Math.round(percent * 100) / 100;
+            if (progressBar) {
+                progressBar.style.width = percent + '%';
+            }
+            if (progressLabel) {
+                progressLabel.textContent = percent + '% completado';
+            }
+            return;
+        } else {
+            // Cálculo normal para los pasos anteriores
+            const totalFields = 1 + requiredStep2.length + requiredStep4.length;
+            const filledFields = paso1 + filledStep2 + filledStep4;
+            percent = totalFields > 0 ? Math.round((filledFields / totalFields) * 100) : 0;
+        }
+
         if (percent > 100) percent = 100;
-        
+
         if (progressBar) {
             progressBar.style.width = percent + '%';
         }
@@ -544,41 +570,7 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     }
     
-    // ========== FUNCIÓN: ABRIR BORRADOR DE EMAIL ==========
-    function openEmailDraft() {
-        const win = window.open('redactar-correo.html', '_blank');
-        if (win) {
-            win.onload = function() {
-                try {
-                    const asuntoInput = win.document.querySelector('.row label + input');
-                    if (asuntoInput) asuntoInput.value = 'Prueba gratuita de CleverFactu de 15 días';
-                    
-                    const iframe = win.document.querySelector('.editor iframe');
-                    if (iframe) {
-                        const doc = iframe.contentDocument || iframe.contentWindow.document;
-                        
-                        const h1 = doc.querySelector('h1');
-                        if (h1) h1.textContent = 'Completa tu registro';
-                        
-                        const parrafos = doc.querySelectorAll('p');
-                        const nombreContacto = document.getElementById('contactoNombre')?.value || '';
-                        
-                        if (parrafos.length > 0 && nombreContacto) {
-                            parrafos[0].innerHTML = 'Hola <strong style="color:#081838;">' + nombreContacto + '</strong>,';
-                        }
-                        if (parrafos.length > 1) {
-                            parrafos[1].innerHTML = 'Hemos recibido tu solicitud de <strong style="color:#0096C6;">prueba gratuita de 15 días</strong>. Para continuar, completa el registro.';
-                        }
-                        
-                        const boton = doc.querySelector('a');
-                        if (boton) boton.textContent = 'Confirmar Correo';
-                    }
-                } catch (e) {
-                    console.warn('No se pudo modificar el correo (CORS):', e);
-                }
-            };
-        }
-    }
+    // ...eliminada función openEmailDraft...
     
     // ========== INICIALIZAR PROVINCIAS Y POBLACIONES ==========
     const provincias = [
