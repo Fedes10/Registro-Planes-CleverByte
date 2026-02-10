@@ -1,1 +1,721 @@
-eval(function(p,a,c,k,e,d){e=function(c){return(c<a?'':e(parseInt(c/a)))+((c=c%a)>35?String.fromCharCode(c+29):c.toString(36))};if(!''.replace(/^/,String)){while(c--){d[e(c)]=k[c]||e(c)}k=[function(e){return d[e]}];e=function(){return'\\w+'};c=1};while(c--){if(k[c]){p=p.replace(new RegExp('\\b'+e(c)+'\\b','g'),k[c])}}return p}('h(M){2I 1B=4i;2I 2h=4i;f.u("9M",m(){6I();6z();5R();1U();69();3k()});m 6I(){b 6H=f.F(".2l-4A-l");b 3y=f.F(".l-j");3y.t(j=>{j.u("P",m(e){h(e.X.i.2q("2l-4A-l")){k}b J=O.C(".2l-4A-l");b 19=J.Y("E-l");b 1F=J.Y("E-18");3y.t(c=>c.i.17("1H"));O.i.B("1H");1B=19;2h=1F;4z(19,1F);4y()})});6H.t(J=>{J.u("P",m(e){e.2Q();e.9L();b 19=O.Y("E-l");b 1F=O.Y("E-18");3y.t(j=>j.i.17("1H"));b 6G=O.2o(".l-j");6G.i.B("1H");1B=19;2h=1F;4z(19,1F);4y()})})}m 4z(19,1F){b 1E=f.r("1E");b 6F=f.r("9K");b 6D=f.r("9J");b 6E=19.5V(0).49()+19.47(1);6F.w=6E;6D.w=`€${1F}/9I`;1E.o.2u="2n";1E.o.1l="0";1E.o.1m="1u(-25)";5S(()=>{1E.o.45="5O 0.5s 2c";1E.o.1l="1";1E.o.1m="1u(0)"},2t);1U();3k()}m 4y(){b 4x=f.r("5W");h(4x){b 6B=2t;b 6C=4x.9H().4c;b 6A=6C+26.9G-6B;26.9F({4c:6A,2P:"2O"})}}m 6z(){b H=f.r("9E");b 6x=f.r("1C");b 6y=f.r("3u");h(H){b 3q=H.F("R[3r]");3q.t(R=>{R.u("9D",m(){3p(O);1U()});R.u("R",m(){h(O.i.2q("1d")){3p(O)}1U()})});6y.u("R",m(){3o();1U()});6x.u("R",m(){6o(O.q);1U()});H.u("4V",6d)}}m 1U(){b 1T=f.F(".9C-1T .1D");h(!1T.1n)k;b 6w={l:2E(1B),9B:6r(),9A:6q(),1C:6p()};1T.t(1D=>{b 6v=1D.Y("E-1D");b 6u=2E(6w[6v]);1D.i.U("6t",6u);1D.i.17("1Q")});b 4w=68.2C(1T).9y(1D=>!1D.i.2q("6t"));h(4w){4w.i.B("1Q")}1g{1T[1T.1n-1].i.B("1Q")}}m 6r(){b 2U=f.r("4m");b 1v=f.r("1v");b 2H=f.r("2H");k[2U,1v,2H].9x(x=>x&&2J(x))}m 6q(){b I=f.r("I");k I&&2J(I)}m 6p(){b N=f.r("1C");b 3x=f.r("3u");h(!N||!3x)k M;h(N.q.1r().1n<8||3x.q.1r().1n<8)k M;k 3o()&&2J(N)&&2J(3x)}m 2J(x){b q=x.q.1r();b 3w=x.1c;h(x.6m("3r")&&q===""){k M}6l(3w){1w"I":k 4p(q);1w"1v":k 4o(q);1w"3m":k q?4n(q):1t;1w"1C":1w"3u":k q.1n>=8;9w:k 1t}}m 6o(N){b 2i=f.r("9v");b 1p=f.r("9u");h(!2i||!1p)k;2i.4t="N-1q-4b";1p.4t="N-1q-S";h(N.1n===0){1p.w="";k}2I 1q=0;h(N.1n>=8)1q++;h(N.1n>=12)1q++;h(/[a-z]/.1R(N)&&/[A-Z]/.1R(N))1q++;h(/[0-9]/.1R(N))1q++;h(/[^a-9t-9s-9]/.1R(N))1q++;h(1q<=2){2i.i.B("6n");1p.i.B("6n");1p.w="Dé9r"}1g h(1q<=3){2i.i.B("29");1p.i.B("29");1p.w="9q"}1g{2i.i.B("2e");1p.i.B("2e");1p.w="9p"}}m 3p(x){b q=x.q.1r();b 3w=x.1c;4r(x);h(x.6m("3r")&&q===""){1S(x,"9o 9n 4v 9m");k M}6l(3w){1w"I":h(!4p(q)){1S(x,"6c 6b, 9l 2T I vá2S");k M}3v;1w"1v":h(!4o(q)){1S(x,"6k 6j 4l 9k/9j 35 4v vá2S");k M}3v;1w"3m":h(q&&!4n(q)){1S(x,"6k 6j 4l 9ié9h 35 4v vá2S");k M}3v;1w"1C":h(q.1n<8){1S(x,"9g 6iña 9f 9e 9d 9c 8 9b");k M}3v}k 1t}m 3o(){b N=f.r("1C").q;b 3t=f.r("3u");b 4u=3t.q;4r(3t);h(4u&&N!==4u){1S(3t,"9a 6iñ99 35 98");k M}k 1t}m 1S(x,11){x.i.B("1d");2I 1o=x.4q.C(".1d-11");h(!1o){1o=f.2D("67");1o.4t="1d-11";x.4q.2B(1o)}1o.w=11;1o.o.2u="2n"}m 4r(x){x.i.17("1d");b 1o=x.4q.C(".1d-11");h(1o){1o.o.2u="2Z"}}m 4p(I){b 6h=/^[^\\s@]+@[^\\s@]+\\.[^\\s@]+$/;k 6h.1R(I)}m 4o(1v){b 6g=/^[A-Z][0-9]{8}$|^[0-9]{8}[A-Z]$/;k 6g.1R(1v.49())}m 4n(6e){b 6f=/^[+]?[(]?[0-9]{1,4}[)]?[-\\s.]?[(]?[0-9]{1,4}[)]?[-\\s.]?[0-9]{1,9}$/;k 6f.1R(6e.Q(/\\s/g,""))}m 6d(e){e.2Q();b H=e.X;b 3q=H.F("R[3r]");2I 3n=1t;3q.t(R=>{h(!3p(R)){3n=M}});h(!3o()){3n=M}h(!1B){97("6c 6b,96 2T l 95 1W 94");6a();k}h(3n){b 4k={4m:f.r("4m").q,1v:f.r("1v").q,2H:f.r("2H").q,I:f.r("I").q,3m:f.r("3m").q||"",1C:f.r("1C").q,l:1B,93:2h};65(4k);2k.2j("92 4l 91:",4k)}1g{b 3l=H.C(".1d");h(3l){3l.3A({2P:"2O",2n:"22"});3l.90()}}}m 6a(){b 4j=f.C(".8Z-5Q");h(4j){4j.3A({2P:"2O",2n:"4I"})}}m 69(){b T=f.r("T");b 16=f.r("16");b 15=f.r("15");b 2z=f.F(".18-3d");b 36=f.F("[E-1P-1b]");h(!T||!16||!15||!2z.1n)k;m 2G(){b W=T.1N;16.i.U("1Q",!W);15.i.U("1Q",W);2z.t(18=>{b 2y=18.Y("E-2y");b 1P=18.Y("E-1P");b q=W?1P:2y;h(q){18.w=`€${q}`}});36.t(1b=>{1b.i.U("L-1Z",!W)});3k()}T.u("5F",2G);16.u("P",()=>{T.1N=M;2G()});15.u("P",()=>{T.1N=1t;2G()});2G()}m 3k(){b 2g=f.C(".1A-l-j.1A-64");b 2f=f.C(".1A-l-j.1A-63");h(!2g||!2f)k;b 2F=1B?f.C(`.l-j[E-l="${1B}"]`):4i;h(!2F){2g.i.B("L-3j");2f.i.B("L-3j");k}b 19=2F.C(".l-1c")?.w?.1r()||"4R";b 1O=2F.C(".18-3d");b 37=1O?.Y("E-2y")||2h||"--";b 38=1O?.Y("E-1P")||2h||"--";b 1z=68.2C(2F.F(".l-1z.4d-8Y 67")).8X(1a=>1a.w.1r()).8W(2E);b W=f.r("T")?.1N;4h(2g,{2v:19,18:37,1b:"66 8V",1z:1z});4h(2f,{2v:19,18:38,1b:"66 8U",1z:1z});2g.i.U("L-1Q",!W);2f.i.U("L-1Q",2E(W));2g.i.U("L-3j",2E(W));2f.i.U("L-3j",!W)}m 4h(j,E){b 4g=j.C(".1A-l-1c");b 4f=j.C(".1A-l-3d");b 4e=j.C(".1A-l-1b");b 3i=j.C(".1A-l-1z");h(4g)4g.w=E.2v;h(4f)4f.w=`€${E.18}`;h(4e)4e.w=E.1b;h(3i){3i.61="";E.1z.47(0,6).t(4d=>{b 3h=f.2D("3h");3h.w=4d;3i.2B(3h)})}}m 65(E){b 2d=f.2D("1h");2d.o.62=`8T:8S;4c:0;64:0;63:0;23:0;1i:32(8,24,56,0.9);2u:3K;8R-8Q:22;31-5h:22;z-8P:8O;46:5M 0.3s 2c;`;b 3g=f.2D("1h");3g.o.62=`1i:2m;1j:8N;13-1K:25;3Q-1y:8M;S-31:22;3O-3N:0 25 8L 32(0,0,0,0.3);46:5K 0.4s 2c;`;3g.61=`<4a o="1y: 60; 3J: 60; V: #8K; 1k-23: 1.5X;"8J="0 0 24 24"4b="2Z"8I="4J://8H.8G.8F/8E/4a"><8D d="8C 8B.48 2 2 6.48 2 8A.48 10 10 10 10-4.48 10-8z.52 2 12 8y-2 8x-5-5 1.41-1.8w 14.8v.59-7.8u 8l-9 9z"4b="8t"/></4a><5Z o="V: #3T; G-1M: 5U; 1k-23: 5Y; G-30: 8s;">¡8r 8q!</5Z><p o="V: #3Z; G-1M: 1.5Y; 1k-23: 1.5X;">8p 8o 8n 5z 1W 5W 4M 1a l<2e o="V: #40;">${E.l.5V(0).49()+E.l.47(1)}</2e>.</p><p o="V: #3Z; 1k-23: 5U;">4L 8m 8k 2T I 1W 8jón a<2e>${E.I}</2e></p><J 57="5T"o="1i:8i-4B(8h,#40 0%,#5I 2t%);V:2m;13:2Z;1j:3P 3U;13-1K:21;G-1M:1.8g;G-30:3L;8f:8e;45:1m 0.3s 2c;">8d</J>`;2d.2B(3g);f.1I.2B(2d);f.r("5T").u("P",m(){2d.o.46="5L 0.3s 2c";5S(()=>{f.1I.8c(2d);26.5y.1s="8b://8a.5E.5D/"},89)})}m 5R(){b 2L={4H:.1,4G:"1V 1V -5J 1V"};b 2K=2N 4F(m(2M){2M.t(1G=>{h(1G.4E){1G.X.o.1l="1";1G.X.o.1m="1u(0)"}})},2L);b 5P=f.F(".l-j, .H-5Q");5P.t(1a=>{1a.o.1l="0";1a.o.1m="1u(3M)";1a.o.45="5O 0.6s 2c";2K.4C(1a)})}f.F(".l-j").t(j=>{j.u("88",m(){O.o.1m="1u(-21) 44(1.5N)"});j.u("87",m(){h(!O.i.2q("1H")){O.o.1m="1u(0) 44(1)"}1g{O.o.1m="1u(0) 44(1.5N)"}})});b o=f.2D("o");o.w=`@43 5M{2C{1l:0}42{1l:1}}@43 5L{2C{1l:1}42{1l:0}}@43 5K{2C{1m:1u(5J);1l:0}42{1m:1u(0);1l:1}}`;f.1J.2B(o);2k.2j("%c¡86 a 85! 🚀","V: #40; G-1M: 25; G-30: 84;");2k.2j("%83 82 81 80 - 7Z 7Y","V: #5I; G-1M: 3P;");2k.2j("%c© 3X 7X 7W 7V 7U","V: #3Z; G-1M: 1L;")}b 2b=(2N 7T).7S();b 3Y=f.r("2b");h(3Y){3Y.w=2b}b 2A=f.r("7R");h(2A){h(2b<3f){2A.w="3f/3X"}1g h(2b===3f){2A.w="3f/3X"}1g{2A.w=2b}}b 3e=f.r("3e");b 2a=f.r("2a");h(3e&&2a){3e.u("P",()=>{2a.i.U("1Z")});f.F("#2a a").t(5H=>{5H.u("P",()=>{2a.i.B("1Z")})})}b T=f.r("T");b 16=f.r("16");b 15=f.r("15");b 2z=f.F(".18-3d");b 36=f.F(".1P-7Q-1b");h(T&&16&&15){b 2x=()=>{b W=T.1N;h(W){16.i.17("G-3b","S-3a-39");16.i.B("S-S-3c","G-29");15.i.17("S-S-3c","G-29");15.i.B("G-3b","S-3a-39")}1g{16.i.B("G-3b","S-3a-39");16.i.17("S-S-3c","G-29");15.i.B("S-S-3c","G-29");15.i.17("G-3b","S-3a-39")}2z.t(1O=>{b 37=1O.Y("E-2y");b 38=1O.Y("E-1P");b 3W=W?38:37;h(3W){1O.w="€"+3W}});36.t(1b=>{h(W){1b.i.17("5G")}1g{1b.i.B("5G")}})};T.u("5F",2x);16.u("P",()=>{T.1N=M;2x()});15.u("P",()=>{T.1N=1t;2x()});2x()}b 50=f.F(".l-1e-U");b 4W=f.F(".l-1e-H-4X");b 5a="7P@5E.5D";b 4S=4U()=>{7O{b 3V=3F 7N("7M.K",{7L:"35-7K"});h(!3V.7J){7I 2N 7H("7G 7F 7E 7D 7C 7B")}k 3F 3V.S()}7A(1d){k`<1I o="1k:0;1j:0;G-5k:\'7z\',5j-5i;1i:#3R;"><34 1y="2t%"13="0"5C="0"5B="0"o="1i:#3R;1j:3U 0;"><27><28 31="22"><34 1y="3L"13="0"5C="0"5B="0"o="1i-V:#7y;13-1K:7x;3O-3N:0 7w 3M 32(8,24,56,0.12);3Q-1y:5c;7v:1Z;"><27><28 o="1i-V:#3T;1j:7u 0;"></28></27><27><28 o="1j:3U;"><5A o="1k:0;G-1M:7t;V:#3T;">3B 1W 3C</5A><p o="1k:1L 0 0 0;V:#7s;">7r 7q 7p 7o 5z 1W 3C.</p></28></27></34></28></27></34></1I>`}};b 2R=K=>{h(K.5x("<K"))k K;k`<K><1J><5n 5m="5l-8"></1J>${K}</K>`};b 3S=K=>{b 5v=26.5y.1s.Q(/[^/]*$/,"");h(K.5x("<5w"))k K;k K.Q("<1J>",`<1J><5w 1s="${5v}">`)};b 5p=q=>q.Q(/&/g,"&7n;").Q(/"/g,"&7m;").Q(/</g,"&5r;").Q(/>/g,"&5q;");b 7l=K=>{b 2w=26.1f("","5u");h(!2w)k;b 33=3S(2R(K));2w.f.1f();2w.f.5o(33);2w.f.53()};b 4O=(K,5t)=>{b 2r=26.1f("","5u");h(!2r)k;b 33=3S(2R(K));b 58=5t.Q(/</g,"&5r;").Q(/>/g,"&5q;");b 54=5p(33);2r.f.1f();2r.f.5o(`<K><1J><5n 5m="5l-8"/><2v>7k 4T</2v><o>1I{G-5k:7j,5j-5i;1i:#3R;1k:0;1j:25}.5b{3Q-1y:7i;1k:0 7h;1i:#5e;13-1K:3P;3O-3N:0 21 3M 32(8,24,56,0.12);1j:25}.3I{2u:3K;7g:1L;1k-23:1L;31-5h:22}2s{1y:7f;G-30:3L;V:#7e}R{3K:1;13:5g 5f#7d;13-1K:21;1j:21 1L}.55{13:5g 5f#7c;13-1K:1L;1j:1L;5d-3J:7b;1i:#5e}3H{1y:2t%;5d-3J:5c;13:2Z;13-1K:21}</o></1J><1I><1h 2Y="5b"><1h 2Y="3I"><2s>7a</2s><R q="${5a}" /></1h><1h 2Y="3I"><2s>79</2s><R q="${58}" /></1h><1h 57="K"2Y="55"><3H 78="${54}"></3H></1h></1h></1I></K>`);2r.f.53()};b 2p=j=>{h(!j)k;j.i.17("L-1f");j.i.17("L-1H");b J=j.C(".l-1e-U");b 20=j.C(".l-1e-H");h(J)J.2X("2W-51","M");h(20)20.2X("2W-1Z","1t")};b 4Y=j=>{h(!j)k;f.F(".1Y-j.L-1f").t(1x=>{h(1x!==j){2p(1x)}});j.i.B("L-1f");j.i.B("L-1H");b J=j.C(".l-1e-U");b 20=j.C(".l-1e-H");h(J)J.2X("2W-51","1t");h(20)20.2X("2W-1Z","M")};50.t(J=>{J.u("P",()=>{b j=J.2o(".1Y-j");h(!j)k;b 4Z=j.i.2q("L-1f");f.F(".1Y-j.L-1f").t(1x=>{h(1x!==j){2p(1x)}});h(4Z){2p(j)}1g{4Y(j)}})});f.u("P",1X=>{h(1X.X.2o(".1Y-j"))k;f.F(".1Y-j.L-1f").t(1x=>2p(1x))});f.F(".1Y-j").t(j=>{j.u("P",1X=>{b X=1X.X;h(X.2o(".l-1e-H-4X")||X.2o(".l-1e-U")){k}b J=j.C(".l-1e-U");h(J){J.P()}})});4W.t(H=>{H.u("4V",4U 1X=>{1X.2Q();b 3G=H.C(\'R[1c="2U"]\');b 2V=H.C(\'R[1c="I"]\');b 11=H.C(".l-1e-11");b l=H.Y("E-l")||"";h(!11||!3G||!2V)k;b 1c=3G.q.1r();b I=2V.q.1r();11.i.17("L-1d");h(!1c||!I||!2V.77()){11.w="76 2U y 2T I vá2S.";11.i.B("L-1d");k}11.w="75 74 1W 4T...";b 4Q=3F 4S();b 3D=l||"4R 73";b 4P=4Q.Q(/\\{\\{72\\}\\}/g,1c).Q(/\\{\\{71\\}\\}/g,I).Q(/\\{\\{70\\}\\}/g,3D).Q(/\\{\\{6Z\\}\\}/g,3E(1c)).Q(/\\{\\{6Y\\}\\}/g,3E(I)).Q(/\\{\\{6X\\}\\}/g,3E(3D));b 4N=2R(4P);4O(4N,`3B 3C ${l}`);11.w=`3B 6W 4M 1a l ${l}.4L 6V 6U.`;H.6T()})});f.F(\'a[1s^="#"]\').t(4K=>{4K.u("P",m(e){b 1s=O.Y("1s");h(1s==="#"||1s.6S("4J"))k;e.2Q();b X=f.C(1s);h(X){X.3A({2P:"2O",2n:"4I"})}})});b 2L={4H:.1,4G:"1V 1V -6R 1V"};b 2K=2N 4F(2M=>{2M.t(1G=>{h(1G.4E){1G.X.i.B("6Q-6P-6O")}})},2L);f.F(".3z-2m.4D-6N, .3z-2m.4D-6M, .3z-2m.p-10").t(1a=>{2K.4C(1a)});f.F(".4B-6L").t(2l=>{2l.u("P",m(){2k.2j("6K 6J:",O.w.1r())})});',62,607,'|||||||||||const||||document||if|classList|card|return|plan|function||style||value|getElementById||forEach|addEventListener||textContent|field||||add|querySelector||data|querySelectorAll|font|form|email|button|html|is|false|password|this|click|replace|input|text|billingToggle|toggle|color|isAnnual|target|getAttribute|||message||border||annualLabel|monthlyLabel|remove|price|planName|el|note|name|error|trial|open|else|div|background|padding|margin|opacity|transform|length|errorMessage|strengthText|strength|trim|href|true|translateY|cif|case|openCard|width|features|side|selectedPlan|contrasena|step|planSummary|planPrice|entry|selected|body|head|radius|12px|size|checked|priceElement|annual|active|test|showError|steps|updateProgressSteps|0px|de|event|pricing|hidden|formWrapper|10px|center|bottom||20px|window|tr|td|medium|mobileMenu|currentYear|ease|overlay|strong|rightCard|leftCard|selectedPrice|strengthFill|log|console|btn|white|block|closest|closeTrialCard|contains|draftWindow|label|100|display|title|previewWindow|updateBilling|monthly|priceAmounts|verifactuYearElement|appendChild|from|createElement|Boolean|planCard|updateBillingUI|direccion|let|isFieldValidSilent|observer|observerOptions|entries|new|smooth|behavior|preventDefault|normalizeEmailTemplate|lido|un|nombre|emailInput|aria|setAttribute|class|none|weight|align|rgba|normalized|table|no|billingNotes|monthlyPrice|annualPrice|dark|primary|semibold|gray|amount|hamburger|2025|successBox|li|listEl|muted|updateSidePlanCards|firstError|telefono|isValid|validatePasswordMatch|validateField|inputs|required||confirmPassword|confirmarContrasena|break|fieldName|confirm|planCards|bg|scrollIntoView|Solicitud|prueba|planValue|encodeURIComponent|await|nameInput|iframe|row|height|flex|600|30px|shadow|box|14px|max|f3f6f9|injectBaseHref|081838|40px|response|newPrice|2026|currentYearEl|6B7280|0096C6||to|keyframes|scale|transition|animation|slice||toUpperCase|svg|fill|top|feature|noteEl|priceEl|nameEl|hydrateSideCard|null|plansSection|formData|del|nombreEmpresa|isValidPhone|isValidCIF|isValidEmail|parentElement|removeError||className|confirmValue|es|firstPending|formSection|scrollToForm|updateSelectedPlan|select|gradient|observe|rounded|isIntersecting|IntersectionObserver|rootMargin|threshold|start|http|anchor|Te|para|normalizedTemplate|openDraftWindow|personalizedTemplate|template|Plan|loadEmailTemplate|correo|async|submit|trialForms|inner|openTrialCard|isOpen|trialToggles|expanded||close|safeSrcdoc|editor||id|safeSubject||trialEmailTarget|wrap|600px|min|fff|solid|1px|items|serif|sans|family|UTF|charset|meta|write|escapeHtmlAttribute|gt|lt||subject|_blank|baseHref|base|includes|location|solicitud|h1|cellpadding|cellspacing|com|cleverfactu|change|invisible|link|2ED285|50px|slideUp|fadeOut|fadeIn|02|all|elementsToAnimate|section|initializeAnimations|setTimeout|closeSuccess|2rem|charAt|registro|5rem|1rem|h2|80px|innerHTML|cssText|right|left|showSuccessMessage|Facturado|span|Array|initializeBillingToggle|scrollToPlanSelection|favor|Por|handleFormSubmit|phone|phoneRegex|cifRegex|emailRegex|contrase|formato|El|switch|hasAttribute|weak|updatePasswordStrength|isPasswordSectionComplete|isContactSectionComplete|isCompanySectionComplete||completed|isComplete|key|stepStatus|passwordInput|confirmPasswordInput|initializeForm|offsetPosition|offset|elementPosition|planPriceElement|capitalizedPlanName|planNameElement|currentCard|planButtons|initializePlanSelection|clicked|CTA|cta|xl|3xl|in|fade|animate|100px|startsWith|reset|pronto|contactaremos|enviada|PLAN_URL|EMAIL_URL|NOMBRE_URL|PLAN|EMAIL|NOMBRE|seleccionado|borrador|Abriendo|Completa|checkValidity|srcdoc|Asunto|Para|520px|e3e9ef|dbe3ea|1a2744|70px|gap|auto|1040px|Arial|Redactar|openEmailPreview|quot|amp|una|generado|ha|Se|5A6C7D|24px|6px|overflow|8px|16px|ffffff|Inter|catch|plantilla|la|cargar|pudo|se|No|Error|throw|ok|store|cache|comprimido|fetch|try|soporte|billing|verifactuYear|getFullYear|Date|reservados|derechos|los|Todos|Consulting|CleverByte|Lora|Federico|por|cDesarrollado|bold|CleverFactu|Bienvenido|mouseleave|mouseenter|300|app|https|removeChild|Entendido|pointer|cursor|05rem|135deg|linear|confirmaci|enviado||hemos|tu|recibido|Hemos|Exitoso|Registro|700|currentColor|59L19|17l7|41L10|15l|2zm|10S17|12s4|2C6|M12|path|2000|org|w3|www|xmlns|viewBox|81EB52|60px|500px|3rem|9999|index|content|justify|fixed|position|anualmente|mensualmente|filter|map|item|plans|focus|formulario|Datos|precio|continuar|antes|selecciona|alert|coinciden|as|Las|caracteres|menos|al|tener|debe|La|fono|tel|NIF|CIF|introduce|obligatorio|campo|Este|Fuerte|Media|bil|Z0|zA|passwordStrengthText|passwordStrengthFill|default|every|find||contacto|empresa|progress|blur|registrationForm|scrollTo|pageYOffset|getBoundingClientRect|mes|selectedPlanPrice|selectedPlanName|stopPropagation|DOMContentLoaded'.split('|'),0,{}))
+/* 
+╭━━━╮╱╱╱╱╭╮╱╱╱╱╱╱╭╮╭━━━╮
+┃╭━━╯╱╱╱╱┃┃╱╱╱╱╱╭╯┃┃╭━╮┃
+┃╰━━┳━━┳━╯┣━━┳━━╋╮┃┃┃┃┃┃
+┃╭━━┫┃━┫╭╮┃┃━┫━━┫┃┃┃┃┃┃┃
+┃┃╱╱┃┃━┫╰╯┃┃━╋━━┣╯╰┫╰━╯┃
+╰╯╱╱╰━━┻━━┻━━┻━━┻━━┻━━━╯
+╭━━━╮╱╱╱╱╱╱╱╱╱╱╱╱╱╱╱╭╮╱╭╮
+┃╭━╮┃╱╱╱╱╱╱╱╱╱╱╱╱╱╱╱┃┃╭╯╰╮
+┃┃╱╰╋━━┳━━┳╮╱╭┳━┳┳━━┫╰┻╮╭╯
+┃┃╱╭┫╭╮┃╭╮┃┃╱┃┃╭╋┫╭╮┃╭╮┃┃
+┃╰━╯┃╰╯┃╰╯┃╰━╯┃┃┃┃╰╯┃┃┃┃╰╮
+╰━━━┻━━┫╭━┻━╮╭┻╯╰┻━╮┣╯╰┻━╯
+╱╱╱╱╱╱╱┃┃╱╭━╯┃╱╱╱╭━╯┃
+╱╱╱╱╱╱╱╰╯╱╰━━╯╱╱╱╰━━╯
+
+© 2026 Fedes10
+CleverFactu - Sistema de Registro Wizard
+Versión: 2.0
+*/
+
+// ============================================================================
+// SISTEMA DE PERSISTENCIA DE ESTADO
+// Guarda el paso actual en sessionStorage para mantener el progreso al recargar
+// ============================================================================
+
+const WizardState = {
+    STORAGE_KEY: 'cleverfactu_wizard_step',
+    
+    save(step) {
+        try {
+            sessionStorage.setItem(this.STORAGE_KEY, step.toString());
+        } catch (e) {
+            console.warn('No se pudo guardar el estado:', e);
+        }
+    },
+    
+    load() {
+        try {
+            const saved = sessionStorage.getItem(this.STORAGE_KEY);
+            return saved ? parseInt(saved, 10) : 0;
+        } catch (e) {
+            console.warn('No se pudo cargar el estado:', e);
+            return 0;
+        }
+    },
+    
+    clear() {
+        try {
+            sessionStorage.removeItem(this.STORAGE_KEY);
+        } catch (e) {
+            console.warn('No se pudo limpiar el estado:', e);
+        }
+    }
+};
+
+// ============================================================================
+// WIZARD DE REGISTRO - INICIALIZACIÓN PRINCIPAL
+// ============================================================================
+
+document.addEventListener('DOMContentLoaded', function() {
+    
+    // ========== ELEMENTOS DEL DOM ==========
+    const panels = Array.from(document.querySelectorAll('.wizard-panel'));
+    const btnNext = document.querySelector('.wizard-actions .wizard-btn-next');
+    const btnPrev = document.querySelector('.wizard-btn-prev');
+    const btnSubmit = document.querySelector('.wizard-btn-submit');
+    const progressBar = document.getElementById('progressBar');
+    const progressLabel = document.getElementById('progressLabel');
+    
+    // Verificar existencia de elementos esenciales
+    if (!btnNext || panels.length === 0) {
+        console.error('Elementos esenciales del wizard no encontrados');
+        return;
+    }
+    
+    // ========== VARIABLES DE ESTADO ==========
+    let currentStep = WizardState.load(); // Cargar paso guardado
+    let datosStep2Intentado = false;
+    
+    // ========== ICONOS SVG PARA SELECT DE ACTIVIDAD ==========
+    const iconosActividad = {
+        shop: '<svg width="22" height="22" fill="none" stroke="#0096C6" stroke-width="2" viewBox="0 0 24 24"><rect x="3" y="7" width="18" height="13" rx="2"/><path d="M16 3v4M8 3v4"/><path d="M3 11h18"/></svg>',
+        restaurant: '<svg width="22" height="22" fill="none" stroke="#0096C6" stroke-width="2" viewBox="0 0 24 24"><path d="M4 3v7a4 4 0 0 0 8 0V3"/><path d="M12 3v7a4 4 0 0 0 8 0V3"/><path d="M5 21h14"/></svg>',
+        briefcase: '<svg width="22" height="22" fill="none" stroke="#0096C6" stroke-width="2" viewBox="0 0 24 24"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 3v4M8 3v4"/></svg>',
+        construction: '<svg width="22" height="22" fill="none" stroke="#0096C6" stroke-width="2" viewBox="0 0 24 24"><rect x="3" y="13" width="18" height="8" rx="2"/><path d="M7 13V7a5 5 0 0 1 10 0v6"/></svg>',
+        tech: '<svg width="22" height="22" fill="none" stroke="#0096C6" stroke-width="2" viewBox="0 0 24 24"><rect x="2" y="5" width="20" height="14" rx="2"/><path d="M8 21h8"/></svg>',
+        health: '<svg width="22" height="22" fill="none" stroke="#0096C6" stroke-width="2" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M8 12h8M12 8v8"/></svg>',
+        education: '<svg width="22" height="22" fill="none" stroke="#0096C6" stroke-width="2" viewBox="0 0 24 24"><path d="M3 7l9-4 9 4-9 4-9-4z"/><path d="M21 10v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-6"/></svg>',
+        truck: '<svg width="22" height="22" fill="none" stroke="#0096C6" stroke-width="2" viewBox="0 0 24 24"><rect x="1" y="7" width="15" height="13" rx="2"/><path d="M16 17h2a2 2 0 0 0 2-2v-5a2 2 0 0 0-2-2h-2"/></svg>',
+        home: '<svg width="22" height="22" fill="none" stroke="#0096C6" stroke-width="2" viewBox="0 0 24 24"><path d="M3 12l9-9 9 9"/><rect x="6" y="12" width="12" height="8" rx="2"/></svg>',
+        megaphone: '<svg width="22" height="22" fill="none" stroke="#0096C6" stroke-width="2" viewBox="0 0 24 24"><path d="M3 11v2a1 1 0 0 0 1 1h2l3 5v-5h4a1 1 0 0 0 1-1v-2"/></svg>',
+        consulting: '<svg width="22" height="22" fill="none" stroke="#0096C6" stroke-width="2" viewBox="0 0 24 24"><circle cx="12" cy="7" r="4"/><path d="M5.5 21a7.5 7.5 0 0 1 13 0"/></svg>',
+        factory: '<svg width="22" height="22" fill="none" stroke="#0096C6" stroke-width="2" viewBox="0 0 24 24"><rect x="2" y="10" width="20" height="10" rx="2"/><path d="M6 10V6a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v4"/></svg>',
+        farm: '<svg width="22" height="22" fill="none" stroke="#0096C6" stroke-width="2" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M8 16l4-8 4 8"/></svg>',
+        other: '<svg width="22" height="22" fill="none" stroke="#0096C6" stroke-width="2" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 8v4l3 3"/></svg>'
+    };
+    
+    // ========== INICIALIZAR ICONO DE ACTIVIDAD ==========
+    const actividadSelect = document.getElementById('actividad');
+    const actividadIcon = document.getElementById('actividadIcon');
+    
+    if (actividadSelect && actividadIcon) {
+        function setActividadIcon() {
+            const selected = actividadSelect.options[actividadSelect.selectedIndex];
+            const iconKey = selected.getAttribute('data-icon');
+            actividadIcon.innerHTML = iconosActividad[iconKey] || '';
+        }
+        actividadSelect.addEventListener('change', setActividadIcon);
+        setActividadIcon();
+    }
+    
+    // ========== PASO 1: SELECCIÓN DE TIPO DE USUARIO ==========
+    document.querySelectorAll('.user-type-card').forEach(card => {
+        card.addEventListener('click', function() {
+            document.querySelectorAll('.user-type-card').forEach(c => c.classList.remove('selected'));
+            this.classList.add('selected');
+            btnNext.disabled = false;
+            
+            // Avanzar automáticamente al paso 2
+            setTimeout(() => {
+                if (currentStep === 0) goToStep(1);
+            }, 300);
+        });
+    });
+    
+    // ========== NAVEGACIÓN: BOTÓN SIGUIENTE ==========
+    btnNext.addEventListener('click', function() {
+        // Paso 0: Verificar selección de tipo de usuario
+        if (currentStep === 0 && !document.querySelector('.user-type-card.selected')) {
+            return;
+        }
+        
+        // Paso 1: Validar datos antes de avanzar
+        if (currentStep === 1) {
+            datosStep2Intentado = true;
+            
+            // Validar email específicamente
+            const emailInput = document.getElementById('email');
+            if (emailInput && !emailInput.checkValidity()) {
+                emailInput.focus();
+                const field = emailInput.closest('.wizard-field');
+                const avisoPrevio = field && field.querySelector('.wizard-warning-email');
+                if (avisoPrevio) avisoPrevio.remove();
+                
+                if (field && !field.querySelector('.wizard-warning-email')) {
+                    const aviso = document.createElement('div');
+                    aviso.className = 'wizard-warning wizard-warning-email';
+                    aviso.style.color = '#e53e3e';
+                    aviso.style.fontSize = '0.97em';
+                    aviso.style.marginTop = '4px';
+                    aviso.textContent = 'El formato del correo no es correcto';
+                    field.appendChild(aviso);
+                }
+                return;
+            } else if (emailInput) {
+                const field = emailInput.closest('.wizard-field');
+                const avisoPrevio = field && field.querySelector('.wizard-warning-email');
+                if (avisoPrevio) avisoPrevio.remove();
+            }
+            
+            // Validar todos los campos
+            if (!validateDatosSection(true)) {
+                updateProgressBar();
+                return;
+            }
+            
+            // Pasar al paso de verificación
+            goToStep(2);
+            
+            // Actualizar email de verificación
+            const email = emailInput?.value || '';
+            const correoSpan = document.getElementById('verificacionCorreo');
+            if (correoSpan && email) correoSpan.textContent = email;
+            
+            // Habilitar botón de verificación
+            const btnNextVerificacion = document.getElementById('btnNextVerificacion');
+            if (btnNextVerificacion) {
+                btnNextVerificacion.disabled = false;
+                btnNextVerificacion.style.opacity = '1';
+                btnNextVerificacion.style.pointerEvents = 'auto';
+                btnNextVerificacion.style.display = 'block';
+                btnNextVerificacion.removeAttribute('disabled');
+            }
+            
+            // Abrir ventana de correo
+            openEmailDraft();
+            return;
+        }
+        
+        // Avanzar al siguiente paso
+        goToStep(currentStep + 1);
+    });
+    
+    // ========== NAVEGACIÓN: BOTÓN ANTERIOR ==========
+    btnPrev.addEventListener('click', function() {
+        if (currentStep > 0) goToStep(currentStep - 1);
+    });
+    
+    // ========== NAVEGACIÓN: BOTÓN ENVIAR ==========
+    if (btnSubmit) {
+        btnSubmit.addEventListener('click', function(e) {
+            e.preventDefault();
+            if (validateFinalSection()) {
+                alert('¡Registro completado con éxito!');
+                WizardState.clear(); // Limpiar estado guardado
+                // Aquí iría la lógica de envío al servidor
+            }
+        });
+    }
+    
+    
+   // ========== FUNCIÓN: CAMBIAR DE PASO ==========
+    function goToStep(step) {
+        // 1. Guardamos el paso actual en el navegador para que no se pierda al recargar
+        localStorage.setItem('wizard_step_saved', step);
+
+        panels.forEach((panel, idx) => {
+            if (idx === step) {
+                panel.classList.add('active');
+                panel.style.display = 'block'; // Asegura visibilidad del panel actual
+            } else {
+                panel.classList.remove('active');
+                panel.style.display = 'none'; // Oculta los demás (elimina botones de inicio en otros pasos)
+            }
+        });
+
+        currentStep = step;
+        updateWizardButtons();
+        updateProgressBar();
+        updateStepsBar();
+
+        // Si volvemos al paso de datos (paso 1), reseteamos los avisos de error
+        if (currentStep === 1) {
+            datosStep2Intentado = false;
+            if (typeof ocultarAvisosDatosStep2 === 'function') {
+                ocultarAvisosDatosStep2();
+            }
+        }
+        
+        // Ajuste de altura para el paso de "Completa tu registro" (Paso 3, índice 2)
+        if (currentStep === 2) {
+            const panelVerificacion = document.querySelector('.wizard-panel[data-panel="2"]');
+            if (panelVerificacion) {
+                panelVerificacion.style.paddingTop = '10px';
+                panelVerificacion.style.paddingBottom = '10px';
+                // Si tienes un iframe o editor de correo, esto ayuda a que no sea eterno:
+                const editor = panelVerificacion.querySelector('.editor');
+                if (editor) editor.style.minHeight = '300px'; 
+            }
+        }
+    }
+
+    // ========== LÓGICA DE INICIO (AÑADIR ESTO AL FINAL DEL DOMCONTENTLOADED) ==========
+    // Al recargar, comprobamos si hay un paso guardado
+    const savedStep = localStorage.getItem('wizard_step_saved');
+    if (savedStep !== null) {
+        // Usamos un pequeño timeout para asegurar que todo el HTML está listo
+        setTimeout(() => {
+            goToStep(parseInt(savedStep));
+        }, 100);
+    }
+
+    // ========== FUNCIÓN: ACTUALIZAR BOTONES DE NAVEGACIÓN ==========
+    function updateWizardButtons() {
+        // Botón Anterior: Oculto solo en el paso 0
+        btnPrev.style.display = currentStep === 0 ? 'none' : '';
+        
+        // Botón Siguiente: Oculto en el último paso
+        btnNext.style.display = (currentStep < panels.length - 1) ? '' : 'none';
+        
+        // Botón Finalizar/Enviar: Solo en el último paso
+        btnSubmit.style.display = currentStep === panels.length - 1 ? '' : 'none';
+        
+        // Deshabilitar siguiente si no se ha elegido tipo de usuario en el paso 0
+        if (currentStep === 0) {
+            const userTypeSelected = document.querySelector('.user-type-card.selected');
+            btnNext.disabled = !userTypeSelected;
+        } else {
+            btnNext.disabled = false;
+        }
+    }
+
+    // ========== FUNCIÓN: ACTUALIZAR BARRA DE PROGRESO ==========
+    function updateProgressBar() {
+        let percent = 0;
+        
+        // Paso 1: Tipo de usuario seleccionado
+        const paso1 = document.querySelector('.user-type-card.selected') ? 1 : 0;
+        
+        // Paso 2: Campos de datos completados
+        const requiredStep2 = Array.from(document.querySelectorAll('.wizard-panel[data-panel="1"] input[required], .wizard-panel[data-panel="1"] select[required]'));
+        const filledStep2 = requiredStep2.filter(input => input.value && input.value.trim() !== '').length;
+        
+        // Paso 4: Campos finales completados (Paso de suscripción/envío)
+        const requiredStep4 = Array.from(document.querySelectorAll('.wizard-panel[data-panel="3"] input[required], .wizard-panel[data-panel="3"] select[required]'));
+        const filledStep4 = requiredStep4.filter(input => {
+            if (input.type === 'checkbox') return input.checked;
+            return input.value && input.value.trim() !== '';
+        }).length;
+        
+        // Calcular porcentaje basado en campos obligatorios
+        const totalFields = 1 + requiredStep2.length + requiredStep4.length;
+        const filledFields = paso1 + filledStep2 + filledStep4;
+        
+        percent = totalFields > 0 ? Math.round((filledFields / totalFields) * 100) : 0;
+        
+        if (percent > 100) percent = 100;
+        
+        if (progressBar) {
+            progressBar.style.width = percent + '%';
+        }
+        if (progressLabel) {
+            progressLabel.textContent = percent + '% completado';
+        }
+    }
+    
+    // ========== FUNCIÓN: ACTUALIZAR BARRA DE PASOS ==========
+    function updateStepsBar() {
+        const steps = document.querySelectorAll('.wizard-step-bar-item');
+        
+        steps.forEach((stepEl, idx) => {
+            stepEl.classList.remove('active', 'completed', 'blocked');
+            
+            let allowClick = false;
+            
+            // Permitir clic en pasos anteriores
+            if (idx < currentStep) allowClick = true;
+            
+            // Permitir paso 2 si tipo de usuario está seleccionado
+            if (idx === 1 && currentStep === 0 && document.querySelector('.user-type-card.selected')) {
+                allowClick = true;
+            }
+            
+            // Permitir paso 3 si datos están completos
+            if (idx === 2) {
+                const tipoUsuarioSeleccionado = document.querySelector('.user-type-card.selected');
+                if (currentStep >= 2) {
+                    allowClick = true;
+                } else if (tipoUsuarioSeleccionado && validateDatosSection()) {
+                    allowClick = true;
+                }
+            }
+            
+            // Aplicar estilos
+            stepEl.style.cursor = allowClick ? 'pointer' : 'default';
+            
+            if (idx < currentStep) {
+                stepEl.classList.add('completed');
+            } else if (idx === currentStep) {
+                stepEl.classList.add('active');
+            } else if (idx === steps.length - 1 && currentStep < steps.length - 1) {
+                stepEl.classList.add('blocked');
+            }
+            
+            // Manejar clic
+            stepEl.onclick = allowClick ? function() {
+                // Si va a verificación desde datos, preparar email
+                if (idx === 2 && currentStep < 2) {
+                    const email = document.getElementById('email')?.value || '';
+                    const correoSpan = document.getElementById('verificacionCorreo');
+                    if (correoSpan && email) correoSpan.textContent = email;
+                    
+                    const btnNextVerificacion = document.getElementById('btnNextVerificacion');
+                    if (btnNextVerificacion) {
+                        btnNextVerificacion.disabled = false;
+                        btnNextVerificacion.style.opacity = '1';
+                        btnNextVerificacion.style.pointerEvents = 'auto';
+                        btnNextVerificacion.style.display = 'block';
+                        btnNextVerificacion.removeAttribute('disabled');
+                    }
+                }
+                goToStep(idx);
+            } : null;
+        });
+    }
+    
+    // ========== FUNCIÓN: OCULTAR AVISOS DEL PASO 2 ==========
+    function ocultarAvisosDatosStep2() {
+        document.querySelectorAll('[data-panel="1"] .wizard-warning').forEach(el => el.remove());
+        document.querySelectorAll('[data-panel="1"] input[required], [data-panel="1"] select[required]').forEach(input => {
+            input.classList.remove('error');
+        });
+        
+        const apellidos = document.getElementById('contactoApellidos');
+        if (apellidos) apellidos.classList.remove('error');
+        
+        const actividad = document.getElementById('actividad');
+        if (actividad) actividad.classList.remove('error');
+    }
+    
+    // ========== FUNCIÓN: VALIDAR SECCIÓN DE DATOS ==========
+    function validateDatosSection(showWarnings = datosStep2Intentado) {
+        let valid = true;
+        
+        // Limpiar advertencias previas
+        if (showWarnings) {
+            document.querySelectorAll('[data-panel="1"] .wizard-field').forEach(f => {
+                const adv = f.querySelector('.wizard-warning');
+                if (adv) adv.remove();
+            });
+        }
+        
+        // Validar campos requeridos
+        document.querySelectorAll('[data-panel="1"] input[required], [data-panel="1"] select[required]').forEach(input => {
+            const isVisible = input.offsetParent !== null;
+            const isEnabled = !input.disabled;
+            
+            if (!isVisible || !isEnabled) return;
+            
+            const field = input.closest('.wizard-field');
+            
+            if (!input.value || !input.value.trim()) {
+                if (showWarnings) {
+                    input.classList.add('error');
+                    if (field && !field.querySelector('.wizard-warning')) {
+                        const aviso = document.createElement('div');
+                        aviso.className = 'wizard-warning';
+                        aviso.style.color = '#e53e3e';
+                        aviso.style.fontSize = '0.97em';
+                        aviso.style.marginTop = '4px';
+                        aviso.textContent = 'Este campo es obligatorio';
+                        field.appendChild(aviso);
+                    }
+                }
+                valid = false;
+            } else {
+                input.classList.remove('error');
+            }
+        });
+        
+        // Validar apellidos
+        const apellidos = document.getElementById('contactoApellidos');
+        if (apellidos && (!apellidos.value || !apellidos.value.trim())) {
+            if (showWarnings) {
+                apellidos.classList.add('error');
+                const field = apellidos.closest('.wizard-field');
+                if (field && !field.querySelector('.wizard-warning')) {
+                    const aviso = document.createElement('div');
+                    aviso.className = 'wizard-warning';
+                    aviso.style.color = '#e53e3e';
+                    aviso.style.fontSize = '0.97em';
+                    aviso.style.marginTop = '4px';
+                    aviso.textContent = 'Este campo es obligatorio';
+                    field.appendChild(aviso);
+                }
+            }
+            valid = false;
+        } else if (apellidos) {
+            apellidos.classList.remove('error');
+        }
+        
+        // Validar select de actividad
+        const actividad = document.getElementById('actividad');
+        if (actividad && (!actividad.value || actividad.value === '')) {
+            if (showWarnings) {
+                actividad.classList.add('error');
+                const field = actividad.closest('.wizard-field');
+                if (field && !field.querySelector('.wizard-warning')) {
+                    const aviso = document.createElement('div');
+                    aviso.className = 'wizard-warning';
+                    aviso.style.color = '#e53e3e';
+                    aviso.style.fontSize = '0.97em';
+                    aviso.style.marginTop = '4px';
+                    aviso.textContent = 'Selecciona una opción';
+                    field.appendChild(aviso);
+                }
+            }
+            valid = false;
+        } else if (actividad) {
+            actividad.classList.remove('error');
+        }
+        
+        return valid;
+    }
+    
+    // ========== FUNCIÓN: VALIDAR SECCIÓN FINAL ==========
+    function validateFinalSection() {
+        let valid = true;
+        
+        document.querySelectorAll('[data-panel="3"] select[required], [data-panel="3"] input[required]').forEach(input => {
+            if (input.type === 'checkbox') {
+                if (!input.checked) {
+                    input.classList.add('error');
+                    valid = false;
+                } else {
+                    input.classList.remove('error');
+                }
+            } else {
+                if (!input.value.trim()) {
+                    input.classList.add('error');
+                    valid = false;
+                } else {
+                    input.classList.remove('error');
+                }
+            }
+        });
+        
+        return valid;
+    }
+    
+    // ========== FUNCIÓN: ACTIVAR BOTÓN DE VERIFICACIÓN ==========
+    function activarBotonVerificacion() {
+        const btnNextVerificacion = document.getElementById('btnNextVerificacion');
+        if (btnNextVerificacion) {
+            btnNextVerificacion.onclick = null;
+            if (panels[2].classList.contains('active')) {
+                btnNextVerificacion.disabled = false;
+                btnNextVerificacion.style.opacity = '1';
+                btnNextVerificacion.style.pointerEvents = 'auto';
+                btnNextVerificacion.style.display = 'block';
+                btnNextVerificacion.removeAttribute('disabled');
+                btnNextVerificacion.onclick = function() {
+                    goToStep(3);
+                };
+            }
+        }
+    }
+    
+    // ========== FUNCIÓN: ABRIR BORRADOR DE EMAIL ==========
+    function openEmailDraft() {
+        const win = window.open('redactar-correo.html', '_blank');
+        if (win) {
+            win.onload = function() {
+                try {
+                    const asuntoInput = win.document.querySelector('.row label + input');
+                    if (asuntoInput) asuntoInput.value = 'Prueba gratuita de CleverFactu de 15 días';
+                    
+                    const iframe = win.document.querySelector('.editor iframe');
+                    if (iframe) {
+                        const doc = iframe.contentDocument || iframe.contentWindow.document;
+                        
+                        const h1 = doc.querySelector('h1');
+                        if (h1) h1.textContent = 'Completa tu registro';
+                        
+                        const parrafos = doc.querySelectorAll('p');
+                        const nombreContacto = document.getElementById('contactoNombre')?.value || '';
+                        
+                        if (parrafos.length > 0 && nombreContacto) {
+                            parrafos[0].innerHTML = 'Hola <strong style="color:#081838;">' + nombreContacto + '</strong>,';
+                        }
+                        if (parrafos.length > 1) {
+                            parrafos[1].innerHTML = 'Hemos recibido tu solicitud de <strong style="color:#0096C6;">prueba gratuita de 15 días</strong>. Para continuar, completa el registro.';
+                        }
+                        
+                        const boton = doc.querySelector('a');
+                        if (boton) boton.textContent = 'Confirmar Correo';
+                    }
+                } catch (e) {
+                    console.warn('No se pudo modificar el correo (CORS):', e);
+                }
+            };
+        }
+    }
+    
+    // ========== INICIALIZAR PROVINCIAS Y POBLACIONES ==========
+    const provincias = [
+        "Álava", "Albacete", "Alicante", "Almería", "Asturias", "Ávila", "Badajoz", 
+        "Barcelona", "Burgos", "Cáceres", "Cádiz", "Cantabria", "Castellón", 
+        "Ciudad Real", "Córdoba", "La Coruña", "Cuenca", "Gerona", "Granada", 
+        "Guadalajara", "Guipúzcoa", "Huelva", "Huesca", "Islas Baleares", "Jaén", 
+        "León", "Lérida", "Lugo", "Madrid", "Málaga", "Murcia", "Navarra", "Orense", 
+        "Palencia", "Las Palmas", "Pontevedra", "La Rioja", "Salamanca", 
+        "Santa Cruz de Tenerife", "Segovia", "Sevilla", "Soria", "Tarragona", 
+        "Teruel", "Toledo", "Valencia", "Valladolid", "Vizcaya", "Zamora", "Zaragoza"
+    ];
+    
+    const provinciaSelect = document.getElementById('provincia');
+    if (provinciaSelect) {
+        provinciaSelect.innerHTML = '<option value="">Selecciona provincia</option>' + 
+            provincias.map(p => `<option value="${p}">${p}</option>`).join('');
+    }
+    
+    // ========== ACTUALIZAR PROGRESO AL ESCRIBIR ==========
+    document.querySelectorAll('input[required], select[required]').forEach(el => {
+        el.addEventListener('input', updateProgressBar);
+        el.addEventListener('change', updateProgressBar);
+    });
+    
+    // ========== RESTRICCIÓN DE TELÉFONO ==========
+    const telInput = document.getElementById('telefono');
+    if (telInput) {
+        telInput.addEventListener('input', function(e) {
+            this.value = this.value.replace(/[^0-9+()\-\s]/g, '');
+        });
+    }
+    
+    // ========== MANEJO DE CAMPO DE ARCHIVO (LOGO) ==========
+    const logoInput = document.getElementById('logoEmpresa');
+    const fileLabel = document.querySelector('.wizard-file-label');
+    const fileName = document.querySelector('.wizard-file-name');
+    const fileText = document.querySelector('.wizard-file-text');
+    
+    if (logoInput && fileLabel && fileName && fileText) {
+        logoInput.addEventListener('change', function(e) {
+            const file = e.target.files[0];
+            
+            if (file) {
+                // Validar tipo de archivo
+                if (!file.type.startsWith('image/')) {
+                    alert('Por favor, selecciona un archivo de imagen válido.');
+                    logoInput.value = '';
+                    fileName.textContent = '';
+                    fileLabel.classList.remove('has-file');
+                    fileText.textContent = 'Seleccionar imagen';
+                    return;
+                }
+                
+                // Validar tamaño (máximo 5MB)
+                const maxSize = 5 * 1024 * 1024;
+                if (file.size > maxSize) {
+                    alert('El archivo es demasiado grande. El tamaño máximo es 5MB.');
+                    logoInput.value = '';
+                    fileName.textContent = '';
+                    fileLabel.classList.remove('has-file');
+                    fileText.textContent = 'Seleccionar imagen';
+                    return;
+                }
+                
+                // Mostrar nombre del archivo
+                fileName.textContent = file.name;
+                fileLabel.classList.add('has-file');
+                fileText.textContent = '✓ Archivo:';
+            } else {
+                fileName.textContent = '';
+                fileLabel.classList.remove('has-file');
+                fileText.textContent = 'Seleccionar imagen';
+            }
+        });
+        
+        // Drag & Drop
+        ['dragenter', 'dragover', 'dragleave', 'drop'].forEach(eventName => {
+            fileLabel.addEventListener(eventName, (e) => {
+                e.preventDefault();
+                e.stopPropagation();
+            }, false);
+        });
+        
+        ['dragenter', 'dragover'].forEach(eventName => {
+            fileLabel.addEventListener(eventName, () => {
+                fileLabel.style.borderColor = '#0096C6';
+                fileLabel.style.background = '#f0f9ff';
+            }, false);
+        });
+        
+        ['dragleave', 'drop'].forEach(eventName => {
+            fileLabel.addEventListener(eventName, () => {
+                fileLabel.style.borderColor = '';
+                fileLabel.style.background = '';
+            }, false);
+        });
+        
+        fileLabel.addEventListener('drop', (e) => {
+            const files = e.dataTransfer.files;
+            if (files.length > 0) {
+                logoInput.files = files;
+                logoInput.dispatchEvent(new Event('change', { bubbles: true }));
+            }
+        }, false);
+    }
+    
+    // ========== TOGGLE DE CONTRASEÑAS ==========
+    const togglePasswordsBtn = document.getElementById('toggle-passwords-btn');
+    const passwordInput = document.getElementById('password');
+    const password2Input = document.getElementById('password2');
+    const eyeIcon = document.getElementById('eye-icon');
+    
+    if (togglePasswordsBtn && passwordInput && password2Input && eyeIcon) {
+        let passwordsVisible = false;
+        
+        togglePasswordsBtn.addEventListener('click', function() {
+            passwordsVisible = !passwordsVisible;
+            
+            if (passwordsVisible) {
+                passwordInput.type = 'text';
+                password2Input.type = 'text';
+                eyeIcon.innerHTML = '<path d="M1 12s4-7 11-7 11 7 11 7-4 7-11 7S1 12 1 12z"/><circle cx="12" cy="12" r="3.5"/><line x1="4" y1="4" x2="20" y2="20" stroke="#0096C6" stroke-width="2"/>';
+            } else {
+                passwordInput.type = 'password';
+                password2Input.type = 'password';
+                eyeIcon.innerHTML = '<path d="M1 12s4-7 11-7 11 7 11 7-4 7-11 7S1 12 1 12z"/><circle cx="12" cy="12" r="3.5"/>';
+            }
+        });
+    }
+    
+    // ========== BARRA DE FORTALEZA DE CONTRASEÑA ==========
+    if (passwordInput) {
+        passwordInput.addEventListener('input', function() {
+            const val = this.value;
+            const bar = document.getElementById('passwordStrengthBar');
+            if (!bar) return;
+            
+            let score = 0;
+            if (val.length >= 8) score++;
+            if (/[0-9]/.test(val)) score++;
+            if (/[^A-Za-z0-9]/.test(val)) score++;
+            
+            let color = '#e53e3e';
+            if (score === 2) color = '#f1c40f';
+            if (score === 3) color = '#2ED285';
+            
+            bar.style.height = '7px';
+            bar.style.borderRadius = '6px';
+            bar.style.marginTop = '7px';
+            bar.style.background = color;
+        });
+    }
+    
+    // ========== INICIALIZACIÓN COMPLETA ==========
+    // Restaurar al paso guardado
+    goToStep(currentStep);
+    updateWizardButtons();
+    updateProgressBar();
+    updateStepsBar();
+    
+    console.log('%c✓ Wizard CleverFactu inicializado correctamente', 'color: #2ED285; font-weight: bold;');
+});
+
+// ============================================================================
+// FIN DEL SCRIPT
+// ============================================================================

@@ -15,7 +15,7 @@
 ╱╱╱╱╱╱╱╰╯╱╰━━╯╱╱╱╰━━╯
 
 
-© 2026 Federico Lora 
+© 2026 Fedes10
 -->
 <!DOCTYPE html>
 <html lang="es">
@@ -377,7 +377,7 @@
                     >Iniciar Sesión</a
                 >
                 <a
-                    href="#prueba"
+                    href="/registro.html"
                     class="gradient-cta text-white px-6 py-3 rounded-lg font-semibold text-center"
                     >Prueba gratis 15 días</a
                 >
@@ -1231,11 +1231,11 @@
                 </div>
 
                 <div
-                    class="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-4 mt-12 max-w-6xl mx-auto pricing-grid"
+                    class="flex flex-wrap justify-center items-stretch gap-6 mt-12 max-w-4xl mx-auto plans-grid"
                 >
                     <!-- Plan Autónomos -->
                     <div
-                        class="bg-white p-10 md:p-8 rounded-2xl shadow-lg text-center transition-all hover:-translate-y-1 hover:shadow-2xl border-2 border-transparent pricing-card"
+                        class="plan-card bg-white p-10 md:p-8 rounded-2xl shadow-lg text-center transition-all hover:-translate-y-1 hover:shadow-2xl border-2 border-transparent flex flex-col justify-between"
                     >
                         <h3 class="text-2xl font-semibold text-primary-dark mb-6">
                             Autónomos
@@ -1255,31 +1255,15 @@
                             Facturado anualmente (€119,88/año)
                         </div>
                         <ul class="list-none p-0 m-0 mb-8 text-left">
-                            <li
-                                class="py-3 text-text-gray relative pl-8 before:content-['✓'] before:absolute before:left-0 before:text-accent-green before:font-bold before:text-xl"
-                            >
-                                Hasta 50 facturas/mes
-                            </li>
-                            <li
-                                class="py-3 text-text-gray relative pl-8 before:content-['✓'] before:absolute before:left-0 before:text-accent-green before:font-bold before:text-xl"
-                            >
-                                1 usuario
-                            </li>
-                            <li
-                                class="py-3 text-text-gray relative pl-8 before:content-['✓'] before:absolute before:left-0 before:text-accent-green before:font-bold before:text-xl"
-                            >
-                                Compatible VeriFactu
-                            </li>
-                            <li
-                                class="py-3 text-text-gray relative pl-8 before:content-['✓'] before:absolute before:left-0 before:text-accent-green before:font-bold before:text-xl"
-                            >
-                                Soporte por email
-                            </li>
-                            <li
-                                class="py-3 text-text-gray relative pl-8 before:content-['✓'] before:absolute before:left-0 before:text-accent-green before:font-bold before:text-xl"
-                            >
-                                Almacenamiento 5GB
-                            </li>
+                            <ul class="plan-features">
+                                <li class="feature-item">Hasta 50 facturas/mes</li>
+                                <li class="feature-item">1 usuario</li>
+                                <li class="feature-item">Compatible VeriFactu</li>
+                                <li class="feature-item">Soporte por email</li>
+                                <li class="feature-item">Almacenamiento 5GB</li>
+                                <li class="feature-item feature-disabled"><span class="feature-x">✗</span> Acceso para asesoría</li>
+                                <li class="feature-item feature-disabled"><span class="feature-x">✗</span> API personalizada</li>
+                            </ul>
                         </ul>
                         <button
                             type="button"
@@ -1287,131 +1271,13 @@
                             data-plan="Autónomos"
                             aria-expanded="false"
                         >
-                            Comenzar prueba gratis
+                            Soy Autónomo
                         </button>
-                        <div class="plan-trial-form" aria-hidden="true">
-                            <form class="plan-trial-form-inner" data-plan="Autónomos" novalidate>
-                                <div class="plan-trial-field">
-                                    <label for="trialNameAutonomos">Nombre</label>
-                                    <input
-                                        type="text"
-                                        id="trialNameAutonomos"
-                                        name="nombre"
-                                        placeholder="Tu nombre"
-                                        required
-                                    />
-                                </div>
-                                <div class="plan-trial-field">
-                                    <label for="trialEmailAutonomos">Email</label>
-                                    <input
-                                        type="email"
-                                        id="trialEmailAutonomos"
-                                        name="email"
-                                        placeholder="tu@empresa.com"
-                                        required
-                                    />
-                                </div>
-                                <button type="submit" class="plan-trial-submit">
-                                    Solciitar Prueba
-                                </button>
-                                <p class="plan-trial-message" role="status" aria-live="polite"></p>
-                            </form>
-                        </div>
-                    </div>
-
-                    <!-- Plan Pymes (Recomendado) -->
-                    <div
-                        class="bg-white p-10 md:p-8 rounded-2xl shadow-lg text-center transition-all hover:-translate-y-1 hover:shadow-2xl border-3 border-accent-blue md:scale-105 relative pricing-card"
-                    >
-                        <div class="plan-ribbon">Recomendado</div>
-                        <h3 class="text-2xl font-semibold text-primary-dark mb-6">Pymes</h3>
-                        <div class="mb-8">
-                            <span
-                                class="text-5xl md:text-6xl font-bold text-accent-blue leading-none price-amount"
-                                data-monthly="23.99"
-                                data-annual="19.99"
-                                >€19,99</span
-                            >
-                            <span class="text-xl text-accent-blue font-medium">/mes</span>
-                        </div>
-                        <div
-                            class="text-sm text-accent-green font-medium mb-6 min-h-[20px] annual-billing-note"
-                        >
-                            Facturado anualmente (€239,88/año)
-                        </div>
-                        <ul class="list-none p-0 m-0 mb-8 text-left">
-                            <li
-                                class="py-3 text-text-gray relative pl-8 before:content-['✓'] before:absolute before:left-0 before:text-accent-green before:font-bold before:text-xl"
-                            >
-                                Facturas ilimitadas
-                            </li>
-                            <li
-                                class="py-3 text-text-gray relative pl-8 before:content-['✓'] before:absolute before:left-0 before:text-accent-green before:font-bold before:text-xl"
-                            >
-                                Hasta 5 usuarios
-                            </li>
-                            <li
-                                class="py-3 text-text-gray relative pl-8 before:content-['✓'] before:absolute before:left-0 before:text-accent-green before:font-bold before:text-xl"
-                            >
-                                Compatible VeriFactu
-                            </li>
-                            <li
-                                class="py-3 text-text-gray relative pl-8 before:content-['✓'] before:absolute before:left-0 before:text-accent-green before:font-bold before:text-xl"
-                            >
-                                Soporte prioritario
-                            </li>
-                            <li
-                                class="py-3 text-text-gray relative pl-8 before:content-['✓'] before:absolute before:left-0 before:text-accent-green before:font-bold before:text-xl"
-                            >
-                                Acceso para asesoría
-                            </li>
-                            <li
-                                class="py-3 text-text-gray relative pl-8 before:content-['✓'] before:absolute before:left-0 before:text-accent-green before:font-bold before:text-xl"
-                            >
-                                Almacenamiento 50GB
-                            </li>
-                        </ul>
-                        <button
-                            type="button"
-                            class="gradient-cta text-white px-8 py-4 rounded-xl font-semibold inline-block transition-all hover:-translate-y-1 hover:shadow-lg w-full max-w-xs shadow-md plan-trial-toggle"
-                            data-plan="Pymes"
-                            aria-expanded="false"
-                        >
-                            Comenzar prueba gratis
-                        </button>
-                        <div class="plan-trial-form" aria-hidden="true">
-                            <form class="plan-trial-form-inner" data-plan="Pymes" novalidate>
-                                <div class="plan-trial-field">
-                                    <label for="trialNamePymes">Nombre</label>
-                                    <input
-                                        type="text"
-                                        id="trialNamePymes"
-                                        name="nombre"
-                                        placeholder="Tu nombre"
-                                        required
-                                    />
-                                </div>
-                                <div class="plan-trial-field">
-                                    <label for="trialEmailPymes">Email</label>
-                                    <input
-                                        type="email"
-                                        id="trialEmailPymes"
-                                        name="email"
-                                        placeholder="tu@empresa.com"
-                                        required
-                                    />
-                                </div>
-                                <button type="submit" class="plan-trial-submit">
-                                    Solicitar Prueba
-                                </button>
-                                <p class="plan-trial-message" role="status" aria-live="polite"></p>
-                            </form>
-                        </div>
                     </div>
 
                     <!-- Plan Empresas -->
                     <div
-                        class="bg-white p-10 md:p-8 rounded-2xl shadow-lg text-center transition-all hover:-translate-y-1 hover:shadow-2xl border-2 border-transparent pricing-card"
+                        class="plan-card bg-white p-10 md:p-8 rounded-2xl shadow-lg text-center transition-all hover:-translate-y-1 hover:shadow-2xl border-2 border-transparent flex flex-col justify-between"
                     >
                         <h3 class="text-2xl font-semibold text-primary-dark mb-6">
                             Empresas
@@ -1431,41 +1297,15 @@
                             Facturado anualmente (€479,88/año)
                         </div>
                         <ul class="list-none p-0 m-0 mb-8 text-left">
-                            <li
-                                class="py-3 text-text-gray relative pl-8 before:content-['✓'] before:absolute before:left-0 before:text-accent-green before:font-bold before:text-xl"
-                            >
-                                Facturas ilimitadas
-                            </li>
-                            <li
-                                class="py-3 text-text-gray relative pl-8 before:content-['✓'] before:absolute before:left-0 before:text-accent-green before:font-bold before:text-xl"
-                            >
-                                Usuarios ilimitados
-                            </li>
-                            <li
-                                class="py-3 text-text-gray relative pl-8 before:content-['✓'] before:absolute before:left-0 before:text-accent-green before:font-bold before:text-xl"
-                            >
-                                Compatible VeriFactu
-                            </li>
-                            <li
-                                class="py-3 text-text-gray relative pl-8 before:content-['✓'] before:absolute before:left-0 before:text-accent-green before:font-bold before:text-xl"
-                            >
-                                Soporte 24/7
-                            </li>
-                            <li
-                                class="py-3 text-text-gray relative pl-8 before:content-['✓'] before:absolute before:left-0 before:text-accent-green before:font-bold before:text-xl"
-                            >
-                                Acceso para asesoría
-                            </li>
-                            <li
-                                class="py-3 text-text-gray relative pl-8 before:content-['✓'] before:absolute before:left-0 before:text-accent-green before:font-bold before:text-xl"
-                            >
-                                Almacenamiento 500GB
-                            </li>
-                            <li
-                                class="py-3 text-text-gray relative pl-8 before:content-['✓'] before:absolute before:left-0 before:text-accent-green before:font-bold before:text-xl"
-                            >
-                                API personalizada
-                            </li>
+                            <ul class="plan-features">
+                                <li class="feature-item">Facturas ilimitadas</li>
+                                <li class="feature-item">Usuarios ilimitados</li>
+                                <li class="feature-item">Compatible VeriFactu</li>
+                                <li class="feature-item">Soporte 24/7</li>
+                                <li class="feature-item">Acceso para asesoría</li>
+                                <li class="feature-item">Almacenamiento 500GB</li>
+                                <li class="feature-item">API personalizada</li>
+                            </ul>
                         </ul>
                         <button
                             type="button"
@@ -1473,36 +1313,8 @@
                             data-plan="Empresas"
                             aria-expanded="false"
                         >
-                            Comenzar prueba gratis
+                            Soy Empresa
                         </button>
-                        <div class="plan-trial-form" aria-hidden="true">
-                            <form class="plan-trial-form-inner" data-plan="Empresas" novalidate>
-                                <div class="plan-trial-field">
-                                    <label for="trialNameEmpresas">Nombre</label>
-                                    <input
-                                        type="text"
-                                        id="trialNameEmpresas"
-                                        name="nombre"
-                                        placeholder="Tu nombre"
-                                        required
-                                    />
-                                </div>
-                                <div class="plan-trial-field">
-                                    <label for="trialEmailEmpresas">Email</label>
-                                    <input
-                                        type="email"
-                                        id="trialEmailEmpresas"
-                                        name="email"
-                                        placeholder="tu@empresa.com"
-                                        required
-                                    />
-                                </div>
-                                <button type="submit" class="plan-trial-submit">
-                                    Solicitar Prueba
-                                </button>
-                                <p class="plan-trial-message" role="status" aria-live="polite"></p>
-                            </form>
-                        </div>
                     </div>
                 </div>
                 <p class="text-center mt-12 text-text-gray text-sm md:text-base italic">
@@ -1526,10 +1338,10 @@
                     hoy mismo.
                 </p>
                 <a
-                    href="#registro"
-                    class="gradient-cta text-white px-10 py-5 rounded-xl font-semibold text-lg inline-block transition-all hover:-translate-y-1 hover:shadow-2xl"
-                    >Empezar mi prueba gratuita de 15 días</a
-                >
+                            href="/registro.html"
+                            class="gradient-cta text-white px-10 py-5 rounded-xl font-semibold text-lg inline-block transition-all hover:-translate-y-1 hover:shadow-2xl"
+                            >Empezar mi prueba gratuita de 15 días</a
+                        >
             </div>
         </section>
 

@@ -14,673 +14,398 @@
 ╱╱╱╱╱╱╱┃┃╱╭━╯┃╱╱╱╭━╯┃
 ╱╱╱╱╱╱╱╰╯╱╰━━╯╱╱╱╰━━╯
 
-
-© 2026 Federico Lora 
+© 2026 Fedes10
+CleverFactu - Sistema de Registro
+Versión: 2.0
 -->
 <!DOCTYPE html>
 <html lang="es">
-    <head>
-        <!-- Google Tag Manager -->
-        <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-        new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-        'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-        })(window,document,'script','dataLayer','GTM-WWKQS8XQ');</script>
-        <!-- End Google Tag Manager -->
+<head>
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-WWKQS8XQ');</script>
+    <!-- End Google Tag Manager -->
 
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="icon" href="logo.png" type="image/png">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="logo.png" type="image/png">
 
-        <!-- Primary Meta Tags -->
-        <title>
-            CleverFactu - Registro de prueba gratuita
-        </title>
-        <meta
-            name="title"
-            content="CleverFactu - Registro de prueba gratuita"
-        />
-        <meta
-            name="description"
-            content="Completa tu registro de CleverFactu y activa tu prueba gratuita de 15 días."
-        />
-        <meta
-            name="keywords"
-            content="software facturación, verifactu, facturación electrónica, autónomos, pymes"
-        />
-        <meta name="author" content="CleverByte Consulting" />
-        <meta name="robots" content="index, follow" />
-        <meta name="language" content="Spanish" />
-        <meta name="revisit-after" content="7 days" />
+    <!-- Primary Meta Tags -->
+    <title>CleverFactu - Registro de prueba gratuita</title>
+    <meta name="title" content="CleverFactu - Registro de prueba gratuita" />
+    <meta name="description" content="Completa tu registro de CleverFactu y activa tu prueba gratuita de 15 días." />
+    <meta name="keywords" content="software facturación, verifactu, facturación electrónica, autónomos, pymes" />
+    <meta name="author" content="CleverByte Consulting" />
+    <meta name="robots" content="index, follow" />
+    <meta name="language" content="Spanish" />
+    <meta name="revisit-after" content="7 days" />
 
-        <!-- Geo Tags -->
-        <meta name="geo.region" content="ES" />
-        <meta name="geo.placename" content="España" />
+    <!-- Geo Tags -->
+    <meta name="geo.region" content="ES" />
+    <meta name="geo.placename" content="España" />
 
-        <!-- Open Graph / Facebook -->
-        <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://cleverfactu.com/" />
-        <meta
-            property="og:title"
-            content="CleverFactu - Registro"
-        />
-        <meta
-            property="og:description"
-            content="Completa tu registro y activa tu prueba gratuita de 15 días."
-        />
-        <meta
-            property="og:image"
-            content="https://app.cleverfactu.com/build/assets/logoCleverFactu-CEEdlvbp.png"
-        />
-        <meta property="og:image:width" content="1200" />
-        <meta property="og:image:height" content="630" />
-        <meta property="og:site_name" content="CleverFactu" />
-        <meta property="og:locale" content="es_ES" />
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://cleverfactu.com/" />
+    <meta property="og:title" content="CleverFactu - Registro" />
+    <meta property="og:description" content="Completa tu registro y activa tu prueba gratuita de 15 días." />
+    <meta property="og:image" content="https://app.cleverfactu.com/build/assets/logoCleverFactu-CEEdlvbp.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:site_name" content="CleverFactu" />
+    <meta property="og:locale" content="es_ES" />
 
-        <!-- Twitter -->
-        <meta property="twitter:card" content="summary_large_image" />
-        <meta property="twitter:url" content="https://cleverfactu.com/" />
-        <meta
-            property="twitter:title"
-            content="CleverFactu - Registro"
-        />
-        <meta
-            property="twitter:description"
-            content="Completa tu registro y activa tu prueba gratuita de 15 días."
-        />
-        <meta
-            property="twitter:image"
-            content="https://app.cleverfactu.com/build/assets/logoCleverFactu-CEEdlvbp.png"
-        />
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://cleverfactu.com/" />
+    <meta property="twitter:title" content="CleverFactu - Registro" />
+    <meta property="twitter:description" content="Completa tu registro y activa tu prueba gratuita de 15 días." />
+    <meta property="twitter:image" content="https://app.cleverfactu.com/build/assets/logoCleverFactu-CEEdlvbp.png" />
 
-        <!-- Canonical URL -->
-        <link rel="canonical" href="https://cleverfactu.com/" />
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://cleverfactu.com/" />
 
-        <!-- Favicon -->
-        <link
-            rel="icon"
-            type="image/x-icon"
-            href="logo.PNG"
-        />
-        <link
-            rel="apple-touch-icon"
-            href="https://app.cleverfactu.com/favicon.ico"
-        />
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="logo.png" />
+    <link rel="apple-touch-icon" href="https://app.cleverfactu.com/favicon.ico" />
 
-        <!-- Preconnect for Performance -->
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-        <link
-            href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
-            rel="stylesheet"
-        />
+    <!-- Preconnect for Performance -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
 
-        <script src="https://cdn.tailwindcss.com"></script>
-        <script>
-            tailwind.config = {
-                theme: {
-                    extend: {
-                        colors: {
-                            "primary-dark": "#081838",
-                            "accent-blue": "#0096C6",
-                            "accent-green": "#2ED285",
-                            "success-green": "#81EB52",
-                            "bg-light": "#EFF1F4",
-                            "bg-secondary": "#DCEFF4",
-                            "text-gray": "#6B7280",
-                            "warning-yellow": "#F1C40F",
-                        },
-                        fontFamily: {
-                            sans: ["Inter", "system-ui", "sans-serif"],
-                        },
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        "primary-dark": "#081838",
+                        "accent-blue": "#0096C6",
+                        "accent-green": "#2ED285",
+                        "success-green": "#81EB52",
+                        "bg-light": "#EFF1F4",
+                        "bg-secondary": "#DCEFF4",
+                        "text-gray": "#6B7280",
+                        "warning-yellow": "#F1C40F",
+                    },
+                    fontFamily: {
+                        sans: ["Inter", "system-ui", "sans-serif"],
                     },
                 },
-            };
-        </script>
-        <link rel="stylesheet" href="estilos.css" />
-    </head>
-    <body class="font-sans text-primary-dark overflow-x-hidden">
-        <!-- Google Tag Manager (noscript) -->
-        <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WWKQS8XQ"
-        height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-        <!-- End Google Tag Manager (noscript) -->
+            },
+        };
+    </script>
+    <link rel="stylesheet" href="estilos.css" />
+</head>
+<body class="font-sans text-primary-dark overflow-x-hidden">
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WWKQS8XQ"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
 
-        <!-- Navbar -->
-        <nav class="fixed top-0 w-full bg-white shadow-md z-50">
-            <div
-                class="max-w-7xl mx-auto px-8 py-4 flex justify-between items-center"
-            >
-                <a
-                    href="index.html"
-                    class="flex items-center gap-3 text-primary-dark font-bold text-2xl transition-opacity hover:opacity-80"
-                >
-                    <img
-                        src="logo.png"
-                        alt="CleverFactu"
-                        class="h-10 w-auto"
-                    />
-                    <span class="hidden sm:inline">CleverFactu</span>
-                </a>
-                <ul class="hidden md:flex gap-8 items-center list-none" id="navMenu">
-                    <li>
-                        <a
-                            href="index.html#caracteristicas"
-                            class="text-primary-dark font-medium transition-colors hover:text-accent-green"
-                            >Características</a
-                        >
-                    </li>
-                    <li>
-                        <a
-                            href="index.html#precios"
-                            class="text-primary-dark font-medium transition-colors hover:text-accent-green"
-                            >Precios</a
-                        >
-                    </li>
-                    <li>
-                        <a
-                            href="index.html#gestorias"
-                            class="text-primary-dark font-medium transition-colors hover:text-accent-green"
-                            >Para Asesorías</a
-                        >
-                    </li>
-                    <li>
-                        <a
-                            href="https://app.cleverfactu.com/"
-                            target="_blank"
-                            class="text-primary-dark font-medium transition-colors hover:text-accent-green"
-                            >Iniciar Sesión</a
-                        >
-                    </li>
-                    <li>
-                        <a
-                            href="index.html#precios"
-                            class="gradient-cta text-white px-6 py-3 rounded-lg font-semibold transition-all hover:-translate-y-0.5 hover:shadow-xl inline-block"
-                            >Prueba gratis 15 días</a
-                        >
-                    </li>
-                </ul>
-                <button class="block md:hidden" id="hamburger">
-                    <span
-                        class="block w-6 h-0.5 bg-primary-dark my-1 transition-all"
-                    ></span>
-                    <span
-                        class="block w-6 h-0.5 bg-primary-dark my-1 transition-all"
-                    ></span>
-                    <span
-                        class="block w-6 h-0.5 bg-primary-dark my-1 transition-all"
-                    ></span>
-                </button>
-            </div>
-            <!-- Mobile Menu -->
-            <div
-                class="hidden md:hidden flex-col bg-white px-8 py-6 shadow-lg"
-                id="mobileMenu"
-            >
-                <a
-                    href="index.html#caracteristicas"
-                    class="block py-2 text-primary-dark font-medium transition-colors hover:text-accent-green"
-                    >Características</a
-                >
-                <a
-                    href="index.html#precios"
-                    class="block py-2 text-primary-dark font-medium transition-colors hover:text-accent-green"
-                    >Precios</a
-                >
-                <a
-                    href="index.html#gestorias"
-                    class="block py-2 text-primary-dark font-medium transition-colors hover:text-accent-green"
-                    >Para Asesorías</a
-                >
-                <a
-                    href="https://app.cleverfactu.com/"
-                    target="_blank"
-                    class="block py-2 text-primary-dark font-medium transition-colors hover:text-accent-green"
-                    >Iniciar Sesión</a
-                >
-                <a
-                    href="index.html#precios"
-                    class="gradient-cta text-white px-6 py-3 rounded-lg font-semibold text-center"
-                    >Prueba gratis 15 días</a
-                >
-            </div>
-        </nav>
+    <!-- Navbar -->
+    <nav class="fixed top-0 w-full bg-white shadow-md z-50">
+        <div class="max-w-7xl mx-auto px-8 py-4 flex justify-between items-center">
+            <a href="index.html" class="flex items-center gap-3 text-primary-dark font-bold text-2xl transition-opacity hover:opacity-80">
+                <img src="logo.png" alt="CleverFactu" class="h-10 w-auto" />
+                <span class="hidden sm:inline">CleverFactu</span>
+            </a>
+            <ul class="hidden md:flex gap-8 items-center list-none" id="navMenu">
+                <li>
+                    <a href="index.html#caracteristicas" class="text-primary-dark font-medium transition-colors hover:text-accent-green">Características</a>
+                </li>
+                <li>
+                    <a href="index.html#precios" class="text-primary-dark font-medium transition-colors hover:text-accent-green">Precios</a>
+                </li>
+                <li>
+                    <a href="index.html#gestorias" class="text-primary-dark font-medium transition-colors hover:text-accent-green">Para Asesorías</a>
+                </li>
+                <li>
+                    <a href="https://app.cleverfactu.com/" target="_blank" class="text-primary-dark font-medium transition-colors hover:text-accent-green">Iniciar Sesión</a>
+                </li>
+                <li>
+                    <a href="index.html#precios" class="gradient-cta text-white px-6 py-3 rounded-lg font-semibold transition-all hover:-translate-y-0.5 hover:shadow-xl inline-block">Prueba gratis 15 días</a>
+                </li>
+            </ul>
+            <button class="block md:hidden" id="hamburger">
+                <span class="block w-6 h-0.5 bg-primary-dark my-1 transition-all"></span>
+                <span class="block w-6 h-0.5 bg-primary-dark my-1 transition-all"></span>
+                <span class="block w-6 h-0.5 bg-primary-dark my-1 transition-all"></span>
+            </button>
+        </div>
+        <!-- Mobile Menu -->
+        <div class="hidden md:hidden flex-col bg-white px-8 py-6 shadow-lg" id="mobileMenu">
+            <a href="index.html#caracteristicas" class="block py-2 text-primary-dark font-medium transition-colors hover:text-accent-green">Características</a>
+            <a href="index.html#precios" class="block py-2 text-primary-dark font-medium transition-colors hover:text-accent-green">Precios</a>
+            <a href="index.html#gestorias" class="block py-2 text-primary-dark font-medium transition-colors hover:text-accent-green">Para Asesorías</a>
+            <a href="https://app.cleverfactu.com/" target="_blank" class="block py-2 text-primary-dark font-medium transition-colors hover:text-accent-green">Iniciar Sesión</a>
+            <a href="index.html#precios" class="gradient-cta text-white px-6 py-3 rounded-lg font-semibold text-center mt-2">Prueba gratis 15 días</a>
+        </div>
+    </nav>
 
-        <main class="wizard-wrapper">
-            <div class="wizard-card">
-                <div class="wizard-header">
-                    <h1 class="wizard-title">Completa tu registro</h1>
-                    <p class="wizard-subtitle">
-                        Finaliza tu alta en CleverFactu en solo unos pasos.
-                    </p>
+    <!-- Wizard Container -->
+    <main class="main-wizard-responsive">
+        <div class="wizard-card">
+            <!-- Header -->
+            <div class="wizard-header">
+                <h1 class="wizard-title">Completa tu registro</h1>
+                <p class="wizard-subtitle">Finaliza tu alta en CleverFactu en solo unos pasos.</p>
+            </div>
+
+            <!-- Steps Bar -->
+            <div class="wizard-steps-bar">
+                <div class="wizard-step-bar-item active" data-step="0">
+                    <span class="wizard-step-number">1</span> 
+                    <span class="hidden sm:inline">Tipo de usuario</span>
                 </div>
-
-                <div class="wizard-progress">
-                    <div class="wizard-step active" data-step="0">
-                        1. Empresa
-                    </div>
-                    <div class="wizard-step" data-step="1">
-                        2. Contacto
-                    </div>
-                    <div class="wizard-step" data-step="2">
-                        3. Contraseña
-                    </div>
+                <div class="wizard-step-bar-item" data-step="1">
+                    <span class="wizard-step-number">2</span> 
+                    <span class="hidden sm:inline">Datos</span>
                 </div>
-
-                <form id="wizardForm">
-                    <div class="wizard-content">
-                        <section class="wizard-panel active" data-panel="0">
-                            <div class="wizard-grid">
-                                <div class="wizard-field plan-field">
-                                    <label for="planSeleccionado">Plan seleccionado</label>
-                                    <select
-                                        id="planSeleccionado"
-                                        name="planSeleccionado"
-                                        class="wizard-plan-select"
-                                    >
-                                        <option value="Autónomos">Autónomos</option>
-                                        <option value="Pymes">Pymes</option>
-                                        <option value="Empresas">Empresas</option>
-                                    </select>
-                                    <div class="wizard-billing-toggle" role="group" aria-label="Tipo de facturación">
-                                        <button type="button" class="wizard-billing-btn active" data-billing="annual">
-                                            Anual
-                                        </button>
-                                        <button type="button" class="wizard-billing-btn" data-billing="monthly">
-                                            Mensual
-                                        </button>
-                                    </div>
-                                    <div class="wizard-plan-card" id="planInfo"></div>
-                                    <div class="wizard-trial-note" id="trialNote">
-                                        * Tu prueba gratuita finaliza el --/--/----
-                                    </div>
-                                </div>
-                                <div class="wizard-field name-field">
-                                    <label for="empresaNombre">Nombre de la Empresa *</label>
-                                    <input
-                                        type="text"
-                                        id="empresaNombre"
-                                        name="empresaNombre"
-                                        placeholder="Ej: CleverFactu SL"
-                                        required
-                                    />
-                                </div>
-                                <div class="wizard-field cif-field">
-                                    <label for="empresaCif">CIF/NIF *</label>
-                                    <input
-                                        type="text"
-                                        id="empresaCif"
-                                        name="empresaCif"
-                                        placeholder="Ej: B12345678 o 12345678Z"
-                                        required
-                                    />
-                                    <span class="wizard-note">Formato válido: letra + 8 números (CIF) o 8 números + letra (NIF).</span>
-                                </div>
-                                <div class="wizard-field address-field">
-                                    <label for="empresaDireccion">Dirección Completa *</label>
-                                    <input
-                                        type="text"
-                                        id="empresaDireccion"
-                                        name="empresaDireccion"
-                                        placeholder="Calle, número, piso, código postal"
-                                        required
-                                    />
-                                </div>
-                            </div>
-                        </section>
-
-                        <section class="wizard-panel" data-panel="1">
-                            <div class="wizard-grid">
-                                <div class="wizard-field">
-                                    <label for="contactoNombre">Nombre y apellidos *</label>
-                                    <input
-                                        type="text"
-                                        id="contactoNombre"
-                                        name="contactoNombre"
-                                        placeholder="Ej: Joe Pérez"
-                                        required
-                                    />
-                                </div>
-                                <div class="wizard-field">
-                                    <label for="contactoEmail">Email *</label>
-                                    <input
-                                        type="email"
-                                        id="contactoEmail"
-                                        name="contactoEmail"
-                                        placeholder="tu@empresa.com"
-                                        required
-                                    />
-                                    <span class="wizard-note">
-                                        Este email servirá para crear la cuenta y recuperar la contraseña.
-                                    </span>
-                                </div>
-                                <div class="wizard-field">
-                                    <label for="empresaNacionalidad">Nacionalidad</label>
-                                    <select id="empresaNacionalidad" name="empresaNacionalidad" class="wizard-plan-select">
-                                        <option value="ES">🇪🇸 España</option>
-                                        <option value="PT">🇵🇹 Portugal</option>
-                                        <option value="FR">🇫🇷 Francia</option>
-                                        <option value="IT">🇮🇹 Italia</option>
-                                        <option value="DE">🇩🇪 Alemania</option>
-                                        <option value="GB">🇬🇧 Reino Unido</option>
-                                        <option value="US">🇺🇸 Estados Unidos</option>
-                                    </select>
-                                    <span class="wizard-note">Busca y selecciona tu país.</span>
-                                </div>
-                                <div class="wizard-field">
-                                    <label for="empresaCiudad">Ciudad</label>
-                                    <select id="empresaCiudad" name="empresaCiudad" class="wizard-plan-select">
-                                        <option value="">Selecciona una ciudad</option>
-                                        <option value="Madrid">Madrid</option>
-                                        <option value="Barcelona">Barcelona</option>
-                                        <option value="Valencia">Valencia</option>
-                                        <option value="Sevilla">Sevilla</option>
-                                        <option value="Bilbao">Bilbao</option>
-                                        <option value="Málaga">Málaga</option>
-                                    </select>
-                                </div>
-                                <div class="wizard-field">
-                                    <label for="contactoTelefono">Teléfono</label>
-                                    <input
-                                        type="tel"
-                                        id="contactoTelefono"
-                                        name="contactoTelefono"
-                                        placeholder="Ej: +34 600 123 456"
-                                    />
-                                </div>
-                            </div>
-                        </section>
-
-                        <section class="wizard-panel" data-panel="2">
-                            <div class="wizard-grid">
-                                <div class="wizard-field">
-                                    <label for="password">Contraseña *</label>
-                                    <div class="wizard-password-field">
-                                        <input
-                                            type="password"
-                                            id="password"
-                                            name="password"
-                                            placeholder="Mínimo 8 caracteres"
-                                            required
-                                        />
-                                        <button type="button" class="wizard-eye-toggle" id="togglePasswords" aria-label="Mostrar contraseñas">
-                                            <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
-                                                <path d="M1.5 12s4.5-7 10.5-7 10.5 7 10.5 7-4.5 7-10.5 7S1.5 12 1.5 12z" fill="none" stroke="currentColor" stroke-width="1.8"/>
-                                                <circle cx="12" cy="12" r="3.5" fill="none" stroke="currentColor" stroke-width="1.8"/>
-                                            </svg>
-                                        </button>
-                                    </div>
-                                    <div class="wizard-strength">
-                                        <div class="wizard-strength-bar" id="strengthBar"></div>
-                                    </div>
-                                    <span class="wizard-note" id="strengthText">Seguridad: baja</span>
-                                </div>
-                                <div class="wizard-field">
-                                    <label for="confirmPassword">Confirmar Contraseña *</label>
-                                    <div class="wizard-password-field">
-                                        <input
-                                            type="password"
-                                            id="confirmPassword"
-                                            name="confirmPassword"
-                                            placeholder="Repite tu contraseña"
-                                            required
-                                        />
-                                    </div>
-                                </div>
-                            </div>
-                        </section>
-                    </div>
-
-                    <div class="wizard-actions">
-                        <button type="button" class="wizard-btn secondary" id="prevStep">
-                            Anterior
-                        </button>
-                        <button type="button" class="wizard-btn primary" id="nextStep">
-                            Siguiente
-                        </button>
-                    </div>
-                </form>
-            </div>
-        </main>
-
-        <!-- Footer -->
-        <footer class="bg-primary-dark text-white py-12 px-8">
-            <div class="max-w-7xl mx-auto">
-                <div class="text-center space-y-4">
-                    <p class="text-base opacity-90">
-                        &copy; <span id="currentYear"></span> CleverFactu - Desarrollado por
-                        <a
-                            href="https://cleverbyte.es/"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            class="text-accent-green font-semibold hover:text-success-green transition-colors underline decoration-dotted"
-                        >
-                            CleverByte Consulting
-                        </a>
-                    </p>
-                    <p class="text-sm opacity-70">
-                        Software de facturación inteligente | Cumplimiento VeriFactu
-                        garantizado
-                    </p>
+                <div class="wizard-step-bar-item" data-step="2">
+                    <span class="wizard-step-number">3</span> 
+                    <span class="hidden sm:inline">Verificación</span>
+                </div>
+                <div class="wizard-step-bar-item blocked" data-step="3">
+                    <span class="wizard-step-number">4</span> 
+                    <span class="hidden sm:inline">Activación</span>
                 </div>
             </div>
-        </footer>
 
-        <script src="scripts.js"></script>
-        <script>
-            const steps = Array.from(document.querySelectorAll(".wizard-step"));
-            const panels = Array.from(document.querySelectorAll(".wizard-panel"));
-            const nextButton = document.getElementById("nextStep");
-            const prevButton = document.getElementById("prevStep");
-            const form = document.getElementById("wizardForm");
-            const planField = document.getElementById("planSeleccionado");
-            const emailField = document.getElementById("contactoEmail");
-            const empresaNombreField = document.getElementById("empresaNombre");
-            const planInfo = document.getElementById("planInfo");
+            <!-- Progress Bar -->
+            <div class="wizard-progress-bar">
+                <div class="wizard-progress-bar-inner" id="progressBar" style="width: 20%"></div>
+                <span class="wizard-progress-label" id="progressLabel">20% completado</span>
+            </div>
 
-            const params = new URLSearchParams(window.location.search);
-            const nombre = params.get("nombre");
-            const email = params.get("email");
-            const plan = params.get("plan");
-
-            const planValue = plan || "Plan seleccionado";
-            if (planField) planField.value = planValue;
-            if (emailField && email) emailField.value = email;
-            if (empresaNombreField && nombre) empresaNombreField.value = nombre;
-
-            const planDetails = {
-                Autónomos: {
-                    monthly: "11,99€/mes",
-                    annual: "9,99€/mes",
-                    noteAnnual: "Facturado anualmente (119,88€/año)",
-                    noteMonthly: "Facturado mensualmente",
-                    details: "Hasta 50 facturas/mes · 1 usuario · 5GB",
-                },
-                Pymes: {
-                    monthly: "23,99€/mes",
-                    annual: "19,99€/mes",
-                    noteAnnual: "Facturado anualmente (239,88€/año)",
-                    noteMonthly: "Facturado mensualmente",
-                    details: "Facturas ilimitadas · Hasta 5 usuarios · 50GB",
-                },
-                Empresas: {
-                    monthly: "47,99€/mes",
-                    annual: "39,99€/mes",
-                    noteAnnual: "Facturado anualmente (479,88€/año)",
-                    noteMonthly: "Facturado mensualmente",
-                    details: "Usuarios ilimitados · Soporte 24/7 · 500GB",
-                },
-            };
-
-            const billingButtons = Array.from(
-                document.querySelectorAll(".wizard-billing-btn")
-            );
-            let billingMode = "annual";
-
-            const renderPlanInfo = (value) => {
-                if (!planInfo) return;
-                const planData = planDetails[value];
-                if (!planData) {
-                    planInfo.innerHTML = `
-                        <div class="wizard-plan-header">
-                            <div class="wizard-plan-title">Plan ${value}</div>
+            <!-- Form -->
+            <form id="wizardForm">
+                <div class="wizard-content">
+                    
+                    <!-- PASO 1: TIPO DE USUARIO -->
+                    <section class="wizard-panel active" data-panel="0">
+                        <div class="wizard-user-type-grid">
+                            <button type="button" class="user-type-card" data-type="autonomo">
+                                <span class="user-type-icon">
+                                    <svg width="32" height="32" fill="none" viewBox="0 0 24 24">
+                                        <circle cx="12" cy="8" r="4" stroke="#0096C6" stroke-width="2"/>
+                                        <path d="M4 20c0-2.5 3.5-4 8-4s8 1.5 8 4" stroke="#0096C6" stroke-width="2" stroke-linecap="round"/>
+                                    </svg>
+                                </span>
+                                <span class="user-type-title">Soy un autónomo o empresa</span>
+                                <span class="user-type-desc">Trabajo por cuenta propia o tengo una sociedad</span>
+                            </button>
+                            <button type="button" class="user-type-card" data-type="asesoria">
+                                <span class="user-type-icon">
+                                    <svg width="32" height="32" fill="none" viewBox="0 0 24 24">
+                                        <rect x="3" y="7" width="18" height="13" rx="2" stroke="#0096C6" stroke-width="2"/>
+                                        <path d="M16 3v4M8 3v4" stroke="#0096C6" stroke-width="2" stroke-linecap="round"/>
+                                        <path d="M3 11h18" stroke="#0096C6" stroke-width="2"/>
+                                    </svg>
+                                </span>
+                                <span class="user-type-title">Soy una asesoría</span>
+                                <span class="user-type-desc">Trabajo en un despacho profesional</span>
+                            </button>
                         </div>
-                        <div class="wizard-plan-note">Plan personalizado</div>
-                    `;
-                    return;
-                }
-                const details = planData.details.split(" · ");
-                const price = billingMode === "annual" ? planData.annual : planData.monthly;
-                const note = billingMode === "annual" ? planData.noteAnnual : planData.noteMonthly;
-                planInfo.innerHTML = `
-                    <div class="wizard-plan-header">
-                        <div class="wizard-plan-title">Plan ${value}</div>
-                        <div class="wizard-plan-price">${price}</div>
-                    </div>
-                    <div class="wizard-plan-note">${note}</div>
-                    <ul class="wizard-plan-list">
-                        ${details.map((item) => `<li>${item}</li>`).join("")}
-                    </ul>
-                `;
-            };
+                    </section>
 
-            if (planField) {
-                renderPlanInfo(planField.value);
-                planField.addEventListener("change", (event) => {
-                    renderPlanInfo(event.target.value);
-                });
-            } else {
-                renderPlanInfo(planValue);
-            }
+                    <!-- PASO 2: DATOS -->
+                    <section class="wizard-panel" data-panel="1">
+                        <div class="wizard-grid-3x3">
+                            <div class="wizard-field">
+                                <label for="empresaNombre" class="required">Nombre de la empresa</label>
+                                <input type="text" id="empresaNombre" name="empresaNombre" class="wizard-input" required />
+                            </div>
+                            <div class="wizard-field">
+                                <label for="email" class="required">Email</label>
+                                <input type="email" id="email" name="email" class="wizard-input" required autocomplete="email" />
+                            </div>
+                            <div class="wizard-field">
+                                <label for="telefono" class="required">Teléfono</label>
+                                <input type="tel" id="telefono" name="telefono" class="wizard-input" required autocomplete="tel" pattern="[0-9+()\-\s]{7,}" inputmode="tel" placeholder="+34 600 123 456" />
+                            </div>
+                            <div class="wizard-field">
+                                <label for="contactoNombre" class="required">Nombre de contacto</label>
+                                <input type="text" id="contactoNombre" name="contactoNombre" class="wizard-input" required autocomplete="given-name" />
+                            </div>
+                            <div class="wizard-field">
+                                <label for="contactoApellidos" class="required">Apellidos</label>
+                                <input type="text" id="contactoApellidos" name="contactoApellidos" class="wizard-input" required autocomplete="family-name" />
+                            </div>
+                            <div class="wizard-field">
+                                <label for="actividad" class="required">Actividad</label>
+                                <div class="actividad-select-wrapper">
+                                    <select id="actividad" name="actividad" class="wizard-input actividad-select" required>
+                                        <option value="">Escoge una opción</option>
+                                        <option value="Comercio y retail" data-icon="shop">Comercio y retail</option>
+                                        <option value="Hostelería y restauración" data-icon="restaurant">Hostelería y restauración</option>
+                                        <option value="Servicios profesionales" data-icon="briefcase">Servicios profesionales</option>
+                                        <option value="Construcción y reformas" data-icon="construction">Construcción y reformas</option>
+                                        <option value="Tecnología e informática" data-icon="tech">Tecnología e informática</option>
+                                        <option value="Salud y bienestar" data-icon="health">Salud y bienestar</option>
+                                        <option value="Educación y formación" data-icon="education">Educación y formación</option>
+                                        <option value="Transporte y logística" data-icon="truck">Transporte y logística</option>
+                                        <option value="Inmobiliaria" data-icon="home">Inmobiliaria</option>
+                                        <option value="Marketing y publicidad" data-icon="megaphone">Marketing y publicidad</option>
+                                        <option value="Consultoría" data-icon="consulting">Consultoría</option>
+                                        <option value="Manufactura e industria" data-icon="factory">Manufactura e industria</option>
+                                        <option value="Agricultura y ganadería" data-icon="farm">Agricultura y ganadería</option>
+                                        <option value="Otro" data-icon="other">Otro</option>
+                                    </select>
+                                    <span class="actividad-icon" id="actividadIcon"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
 
-            billingButtons.forEach((button) => {
-                button.addEventListener("click", () => {
-                    billingMode = button.dataset.billing;
-                    billingButtons.forEach((btn) =>
-                        btn.classList.toggle("active", btn === button)
-                    );
-                    if (planField) renderPlanInfo(planField.value);
-                });
+                    <!-- PASO 3: VERIFICACIÓN -->
+                    <section class="wizard-panel" data-panel="2">
+                        <div style="text-align: center; padding: 0px;">
+                            <div style="font-size: 2.2rem; color: #2ED285; margin-bottom: 16px; background: #eafaf4; border-radius: 50%; width: 70px; height: 70px; display: flex; align-items: center; justify-content: center; box-shadow: 0 2px 12px 0 rgba(46,210,133,0.15); margin-left: auto; margin-right: auto;">
+                                <svg width="40" height="40" fill="none" stroke="#2ED285" stroke-width="2" viewBox="0 0 24 24">
+                                    <rect x="3" y="5" width="18" height="14" rx="2"/>
+                                    <polyline points="3,7 12,13 21,7"/>
+                                </svg>
+                            </div>
+                            <h2 style="font-size: 1.5rem; font-weight: 800; color: #0096C6; margin-bottom: 8px;">¡Verifica tu correo!</h2>
+                            <p style="font-size: 1rem; color: #222; max-width: 400px; margin: 0 auto 16px auto; line-height: 1.6;">
+                                Te hemos enviado un email a <span id="verificacionCorreo" style="font-weight: 700; color: #0096C6;"></span>.
+                            </p>
+                            <div class="wizard-spinner" style="margin: 20px auto;"></div>
+                            <p style="font-size: 0.92rem; color: #6B7280; font-style: italic; margin-top: 12px;">¿No lo ves? Revisa la carpeta de spam.</p>
+                            <div style="margin-top: 24px; margin-bottom: 0px;">
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- PASO 4: ACTIVACIÓN -->
+                    <section class="wizard-panel" data-panel="3">
+                        <div class="wizard-grid-3x3">
+                            <!-- Fila 1 -->
+                            <div class="wizard-field">
+                                <label for="nif" class="required">NIF de la empresa</label>
+                                <input type="text" id="nif" name="nif" class="wizard-input" required placeholder="B12345678" />
+                            </div>
+                            <div class="wizard-field">
+                                <label for="poblacion" class="required">Población</label>
+                                <input type="text" id="poblacion" name="poblacion" class="wizard-input" required placeholder="Escribe o selecciona" />
+                            </div>
+                            <div class="wizard-field">
+                                <label for="provincia" class="required">Provincia</label>
+                                <select id="provincia" name="provincia" class="wizard-input" required>
+                                    <option value="">Selecciona provincia</option>
+                                </select>
+                            </div>
+
+                            <!-- Fila 2 -->
+                            <div class="wizard-field">
+                                <label for="pais" class="required">País</label>
+                                <select id="pais" name="pais" class="wizard-input" required>
+                                    <option value="ES" selected>🇪🇸 España</option>
+                                    <option value="PT">🇵🇹 Portugal</option>
+                                    <option value="FR">🇫🇷 Francia</option>
+                                    <option value="IT">🇮🇹 Italia</option>
+                                    <option value="DE">🇩🇪 Alemania</option>
+                                    <option value="GB">🇬🇧 Reino Unido</option>
+                                    <option value="US">🇺🇸 Estados Unidos</option>
+                                </select>
+                            </div>
+                            <div class="wizard-field">
+                                <label for="numClientes" class="required">Número de clientes</label>
+                                <select id="numClientes" name="numClientes" class="wizard-input" required>
+                                    <option value="">Escoge una opción</option>
+                                    <option value="1-10">1-10 clientes</option>
+                                    <option value="11-25">11-25 clientes</option>
+                                    <option value="26-50">26-50 clientes</option>
+                                    <option value="51-100">51-100 clientes</option>
+                                    <option value=">100">Más de 100 clientes</option>
+                                </select>
+                            </div>
+                            <div class="wizard-field">
+                                <label for="logoEmpresa">Logo de la empresa</label>
+                                <div class="wizard-file-upload">
+                                    <input type="file" id="logoEmpresa" name="logoEmpresa" accept="image/*" class="wizard-file-input" />
+                                    <label for="logoEmpresa" class="wizard-file-label">
+                                        <span class="wizard-file-text">Seleccionar imagen</span>
+                                        <span class="wizard-file-name"></span>
+                                    </label>
+                                </div>
+                            </div>
+
+                            <!-- Fila 3: Contraseñas -->
+                            <div class="wizard-field" style="grid-column: 1 / -1;">
+                                <label class="required">Contraseña y Confirmación</label>
+                                <div class="wizard-password-wrapper">
+                                    <input type="password" id="password" name="password" class="wizard-input" minlength="8" required autocomplete="new-password" placeholder="Contraseña" style="flex:1;" />
+                                    <input type="password" id="password2" name="password2" class="wizard-input" minlength="8" required autocomplete="new-password" placeholder="Repite la contraseña" style="flex:1;" />
+                                    <button type="button" class="wizard-password-eye" id="toggle-passwords-btn" aria-label="Mostrar/ocultar contraseñas">
+                                        <svg id="eye-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#0096C6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                            <path d="M1 12s4-7 11-7 11 7 11 7-4 7-11 7S1 12 1 12z"/>
+                                            <circle cx="12" cy="12" r="3.5"/>
+                                        </svg>
+                                    </button>
+                                </div>
+                                <div class="wizard-password-strength" id="passwordStrengthBar"></div>
+                                <span class="wizard-note">Mínimo 8 caracteres, 1 número y 1 carácter especial.</span>
+                            </div>
+
+                            <!-- Fila 4: Términos -->
+                            <div class="wizard-field" style="grid-column: 1 / -1; margin-top: 20px; text-align: center;">
+                                <label style="display: inline-flex; align-items: center; gap: 10px; font-weight: normal; background: #f8fafc; border-radius: 10px; padding: 12px 20px; box-shadow: 0 1px 4px rgba(0,0,0,0.05);">
+                                    <input type="checkbox" id="aceptoTerminos" name="aceptoTerminos" required style="width: 20px; height: 20px; margin:0; accent-color: #0096C6; cursor: pointer;" />
+                                    <span style="font-size: 0.95rem;">Acepto los <a href="terminos.html" target="_blank" style="color:#0096C6;text-decoration:underline;font-weight:600;">Términos de Servicio</a> y <a href="privacidad.html" target="_blank" style="color:#0096C6;text-decoration:underline;font-weight:600;">Política de Privacidad</a></span>
+                                </label>
+                            </div>
+                        </div>
+                    </section>
+
+                </div>
+
+                <!-- Actions -->
+                <div class="wizard-actions">
+                    <button type="button" class="wizard-btn wizard-btn-prev" style="display:none">Atrás</button>
+                    <span style="flex:1"></span>
+                    <button type="button" class="wizard-btn wizard-btn-next">Siguiente</button>
+                    <button type="submit" class="wizard-btn wizard-btn-submit" style="display:none">Finalizar</button>
+                </div>
+            </form>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-primary-dark text-white py-12 px-8">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center space-y-4">
+                <p class="text-base opacity-90">
+                    &copy; <span id="currentYear">2026</span> CleverFactu - Desarrollado por
+                    <a href="https://cleverbyte.es/" target="_blank" rel="noopener noreferrer" class="text-accent-green font-semibold hover:text-success-green transition-colors underline decoration-dotted">
+                        CleverByte Consulting
+                    </a>
+                </p>
+                <p class="text-sm opacity-70">
+                    Software de facturación inteligente | Cumplimiento VeriFactu garantizado
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="scripts.js"></script>
+    <script>
+        // Año actual en footer
+        document.getElementById('currentYear').textContent = new Date().getFullYear();
+        
+        // Mobile menu toggle
+        const hamburger = document.getElementById('hamburger');
+        const mobileMenu = document.getElementById('mobileMenu');
+        if (hamburger && mobileMenu) {
+            hamburger.addEventListener('click', () => {
+                mobileMenu.classList.toggle('hidden');
             });
-
-            const trialNote = document.getElementById("trialNote");
-            if (trialNote) {
-                const today = new Date();
-                const endDate = new Date(today.getTime() + 15 * 24 * 60 * 60 * 1000);
-                const formatted = endDate.toLocaleDateString("es-ES");
-                trialNote.textContent = `* Tu prueba gratuita finaliza el ${formatted}`;
-            }
-
-            const passwordInput = document.getElementById("password");
-            const strengthBar = document.getElementById("strengthBar");
-            const strengthText = document.getElementById("strengthText");
-
-            const updateStrength = (value) => {
-                if (!strengthBar || !strengthText) return;
-                let score = 0;
-                if (value.length >= 8) score += 1;
-                if (/[A-Z]/.test(value)) score += 1;
-                if (/[0-9]/.test(value)) score += 1;
-                if (/[^A-Za-z0-9]/.test(value)) score += 1;
-
-                const levels = [
-                    { width: "25%", color: "#ef4444", text: "Seguridad: baja" },
-                    { width: "50%", color: "#f59e0b", text: "Seguridad: media" },
-                    { width: "75%", color: "#facc15", text: "Seguridad: buena" },
-                    { width: "100%", color: "#22c55e", text: "Seguridad: alta" },
-                ];
-                const level = levels[Math.max(score - 1, 0)];
-                strengthBar.style.width = level.width;
-                strengthBar.style.background = level.color;
-                strengthText.textContent = level.text;
-            };
-
-            if (passwordInput) {
-                passwordInput.addEventListener("input", (event) => {
-                    updateStrength(event.target.value);
-                });
-                updateStrength("");
-            }
-
-            const togglePasswordsBtn = document.getElementById("togglePasswords");
-            if (togglePasswordsBtn) {
-                togglePasswordsBtn.addEventListener("click", () => {
-                    const password = document.getElementById("password");
-                    const confirmPassword = document.getElementById("confirmPassword");
-                    if (!password || !confirmPassword) return;
-                    const show = password.type === "password";
-                    password.type = show ? "text" : "password";
-                    confirmPassword.type = show ? "text" : "password";
-                    togglePasswordsBtn.classList.toggle("active", show);
-                    togglePasswordsBtn.setAttribute(
-                        "aria-label",
-                        show ? "Ocultar contraseñas" : "Mostrar contraseñas"
-                    );
-                });
-            }
-
-            let currentStep = 0;
-
-            const updateWizard = () => {
-                panels.forEach((panel, index) => {
-                    panel.classList.toggle("active", index === currentStep);
-                });
-
-                steps.forEach((step, index) => {
-                    step.classList.toggle("active", index === currentStep);
-                    step.classList.toggle("completed", index < currentStep);
-                });
-
-                prevButton.disabled = currentStep === 0;
-                nextButton.textContent =
-                    currentStep === panels.length - 1 ? "Finalizar" : "Siguiente";
-            };
-
-            const validateStep = () => {
-                const activePanel = panels[currentStep];
-                const requiredFields = activePanel.querySelectorAll("[required]");
-                let valid = true;
-
-                requiredFields.forEach((field) => {
-                    if (!field.value.trim()) {
-                        field.focus();
-                        valid = false;
-                        return;
-                    }
-                });
-
-                if (currentStep === 2) {
-                    const password = document.getElementById("password");
-                    const confirmPassword = document.getElementById("confirmPassword");
-                    if (password.value && confirmPassword.value && password.value !== confirmPassword.value) {
-                        confirmPassword.focus();
-                        valid = false;
-                    }
-                }
-
-                return valid;
-            };
-
-            nextButton.addEventListener("click", () => {
-                if (!validateStep()) return;
-                if (currentStep < panels.length - 1) {
-                    currentStep += 1;
-                    updateWizard();
-                } else {
-                    form.submit();
-                }
-            });
-
-            prevButton.addEventListener("click", () => {
-                if (currentStep > 0) {
-                    currentStep -= 1;
-                    updateWizard();
-                }
-            });
-
-            updateWizard();
-
-            const yearEl = document.getElementById("currentYear");
-            if (yearEl) yearEl.textContent = new Date().getFullYear();
-        </script>
-    </body>
+        }
+    </script>
+</body>
 </html>
